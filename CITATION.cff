@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software/data package, please cite it as below."
+title: "Protocol-Defined Volumetric Response Profiles in Wilms Tumor: reproducibility package"
+authors:
+  - family-names: Velasco
+    given-names: Rachel
+  - family-names: Martinez
+    given-names: Michael
+    affiliation: "Transitional Year Residency Program, TidalHealth Peninsula Regional, Salisbury, MD, USA"
+keywords:
+  - Wilms tumor
+  - nephroblastoma
+  - pediatric radiology
+  - volumetry
+  - neoadjuvant chemotherapy
+  - The Cancer Imaging Archive
+  - Children's Oncology Group
+  - reproducible research
+license: MIT
+type: software

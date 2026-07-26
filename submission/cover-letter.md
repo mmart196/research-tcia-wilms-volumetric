@@ -37,4 +37,4 @@ Sincerely,
 
 Rachel Velasco, on behalf of all authors
 Washington University of Health and Science, San Pedro, Belize
-[email — Rachel: fill at submission]
+rachel.grace.velasco@gmail.com
