@@ -64,11 +64,4 @@ Public, de-identified imaging-derived annotations (TCIA / COG trial data). Manus
 data-source ethics statement and TCIA/COG data citations (collection DOIs pulled at drafting
 time). No IRB pathway required.
 
-## Milestones (~10 weeks)
 
-- [x] Week 1: inventory collections; dataset verification; Gate 1.5 confirm (paired design, no NCTN)
-- [ ] Weeks 2–4: RTSTRUCT volume extraction (`volumes.py`) + QC of the paired cohort
-- [ ] Weeks 5–6: analysis + figures/tables
-- [ ] Weeks 7–8: full draft (Cureus original-article structure)
-- [ ] Week 9: automated QA → GATE 2 (both humans)
-- [ ] Week 10: package → GATE 3 (wife submits)
