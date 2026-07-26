@@ -1,0 +1,9 @@
+series_uid,patient_id,error
+1.2.826.0.1.534147.756.812677238.202252284243584.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202252284243584.4
+1.2.826.0.1.534147.756.812677238.202252281841763.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202252281841763.4
+1.2.826.0.1.534147.756.812677238.202252284842507.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202252284842507.4
+1.2.826.0.1.534147.756.812677238.202252273837504.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202252273837504.4
+1.2.826.0.1.534147.756.812677238.2022615105015938.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.2022615105015938.4
+1.2.826.0.1.534147.756.812677238.202252264341561,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202252264341561
+1.2.826.0.1.534147.756.812677238.20225226553150,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.20225226553150
+1.2.826.0.1.534147.756.812677238.20225225515327.4,AREN0534-PAUTBY,400 Client Error:  for url: https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.20225225515327.4
