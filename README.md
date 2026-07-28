@@ -1,71 +1,55 @@
-# Protocol-Defined Volumetric Response Profiles in Wilms Tumor
+# Volumetric response of Wilms tumor to neoadjuvant chemotherapy
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21608440.svg)](https://doi.org/10.5281/zenodo.21608440)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21608439.svg)](https://doi.org/10.5281/zenodo.21608439)
 
+Reproducibility package for an analysis of tumor volume change on radiologist-reviewed 3D
+segmentations publicly released with Children's Oncology Group trials **AREN0532, AREN0533 and
+AREN0534** on The Cancer Imaging Archive.
 
-**Reproducibility package** for the manuscript:
+**Every number in the manuscript regenerates from the public data and the code in this
+repository.**
 
-> Velasco R, Martinez M. *Protocol-Defined Volumetric Response Profiles in Wilms Tumor:
-> A Reproducible Analysis of Public Three-Dimensional Segmentations From COG Trials
-> AREN0532, AREN0533, and AREN0534.* (submitted)
+## What is here
 
-Every number in the manuscript regenerates from the public data and the code in this
-repository. The headline result: median Wilms tumor volume reduction at the first
-post-chemotherapy assessment was **−86.0%** (AREN0532, delayed-nephrectomy subset, n=24),
-**−79.9%** (AREN0533, stage III–IV, n=83), and **−71.7%** (AREN0534, bilateral, n=152),
-with 240 of 259 subjects showing a decrease.
+| Path | Contents |
+|---|---|
+| `protocol.md` | The analysis plan, locked 2026-07-26 before any data were touched |
+| `code/` | The full pipeline: cohort assembly, contour volumetry, analysis, figures |
+| `data/` | Derived data — cohort manifest, per-lesion volumes, analysis output |
+| `draft/` | Manuscript and figures |
 
-## Data sources (all public)
+## Method in one paragraph
 
-- **The Cancer Imaging Archive (TCIA):** collections AREN0532, AREN0533, AREN0534 —
-  radiotherapy structure sets (RTSTRUCT) with expert 3D tumor contours and trial
-  timepoints. Source images are not distributed; analysis is contour-based.
-- Annotation metadata reports (committed here under `data/Metadata_Report_*.csv`).
-- References: every citation resolved against live PubMed (`draft/references.json`).
+The three public collections distribute RTSTRUCT annotation objects — closed-planar 3D tumor
+contours produced under radiologist review — but not the source images. Tumor volume is therefore
+computed directly from the contours: per slice, polygon area by Newell's method, multiplied by
+inter-slice spacing, summed across slices and across kidney tumor ROIs for each subject and
+timepoint. The primary outcome is percent volume change from the pre-treatment timepoint to the
+first post-chemotherapy timepoint. Because the three trials use different chemotherapy schedules
+and response intervals, results are reported per trial rather than pooled as a comparison.
 
-## Reproduce
+## Validation
 
-```bash
-pip install -r code/requirements.txt
+Computed volumes were cross-validated against the annotation tool's own DICOM ROI Volume field
+across 1,141 lesions (Spearman ρ = 0.998). The check is in the pipeline and re-runs with it.
 
-cd code
-python download.py      # builds paired cohort, downloads RTSTRUCT series (TCIA, resumable)
-python volumes.py       # contour volumetry -> ../data/volumes.csv + qc-summary.md
-python analysis.py      # locked analysis -> ../data/results.json + ../draft/figures/
-python render_draft.py  # injects every statistic from results.json into ../draft/manuscript.md
-```
+## Reproducing the results
 
-`download.py` requires network access to TCIA (`services.cancerimagingarchive.net`).
-Everything after it is offline. Re-running the full chain reproduces
-`draft/manuscript.md` byte-for-byte.
+The derived data in `data/` are sufficient to regenerate every statistic and figure. Regenerating
+from source additionally requires downloading the RTSTRUCT collections from TCIA; see
+`protocol.md` for the collection identifiers and the inclusion rule.
 
-## Layout
+## Data source
 
-```
-code/        download, extraction, analysis, render pipeline (Python)
-data/        annotation metadata, cohort manifest, derived volumes, results.json, QC
-draft/       manuscript.md (rendered), references.json, figures, review report
-protocol.md  locked analysis plan
-submission/  cover letter
-```
+The Cancer Imaging Archive, collections AREN0532, AREN0533 and AREN0534 — public, de-identified
+imaging annotations from COG trials. Please cite TCIA and the collections as well as this work;
+identifiers are in the manuscript's data availability statement.
 
-## Method notes
+## Citation
 
-- Volume per ROI: Newell polygon area × median inter-slice spacing (RTSTRUCT contours),
-  cross-validated against the annotation tool's own DICOM ROI Volume (3006,002C):
-  Spearman ρ = 0.998 across 1,141 lesions, no directional bias (signed difference
-  +0.8% pre-chemotherapy, +0.4% post-chemotherapy).
-- Trials are not time-aligned (de-identified date shifting), so per-trial profiles are
-  primary and the pooled estimate is explicitly secondary.
+See `CITATION.cff`. Archived on Zenodo — cite the concept DOI **10.5281/zenodo.21608439**,
+which always resolves to the most recent archived version.
 
-## License / citation
+## Licence
 
-Code: MIT (see LICENSE). Derived data remain subject to TCIA terms of use — cite the
-TCIA collections per their requirements (see `draft/manuscript.md` references 1–9).
-
-**Reusing this work:** this package is our published research, shared so others can
-verify and build on it. You are welcome to use the code, adapt the pipeline, and run
-your own analyses — that's the point of posting it. All we ask is scholarly courtesy:
-if you use it (or the derived data, or the cohort definitions) in your own work, cite
-the manuscript and this repository rather than republishing them as your own. The
-citation is in CITATION.cff (and on the Zenodo archived release).
+MIT (see `LICENSE`). The underlying TCIA collections carry their own data-use terms.

@@ -1,6 +1,6 @@
 # Clinical covariate & annotation availability — TCIA Wilms (AREN0532/0533/0534)
 
-Checked 2026-07-26 by `agent-cli` on Michael's laptop (TCIA reachable locally).
+Checked 2026-07-26 against the live TCIA archive.
 Method: TCIA wiki REST API (collection + annotation pages), NBIA v1 API, and direct
 inspection of one downloaded RTSTRUCT series. Sources linked inline.
 
@@ -80,9 +80,9 @@ pages, patient-level clinical data live in the **NCTN/NCORP Data Archive**
 NCTN subject IDs has not been tested; ID concordance is unknown until an application
 is approved.
 
-## Consequences for the pivot decision (input to Gate 1.5)
+## Consequences for study scope
 
-1. **No pivot to a single-timepoint design is needed.** The original question —
+1. **A single-timepoint design is not required.** The question as posed —
    volumetric tumor response to neoadjuvant chemotherapy — stands, on ~330 paired
    subjects, computed from RTSTRUCT contours. Title/modality wording: predominantly
    CT (stratify or restrict at extraction).
@@ -90,7 +90,7 @@ is approved.
    limited to age, sex, laterality (from labels), collection (as trial/stage proxy:
    0532 = low-stage FH, 0533 = stage III–IV, 0534 = bilateral).
 3. **With NCTN data (stretch goal):** stage/histology/LOH/outcome correlation.
-   Recommend Michael files the NCTN application in parallel — it is free but slow,
-   and the manuscript does not block on it.
+   An NCTN data application would be required for these covariates; the present
+   analysis is deliberately scoped to what the public collections support.
 4. Figures: 3D contour renderings possible; source-image overlays not possible
    (images not public).

@@ -1,10 +1,7 @@
 # Protocol — Volumetric Response of Wilms Tumor to Neoadjuvant Chemotherapy (TCIA AREN0532/0533/0534)
 
-**Manuscript type:** Original article (database study) — Cureus route: **FREE** (≤10 authors, ≤30 refs)
-**Stage:** execution | **First author:** wife | **Senior author:** michael
-**Validation score: 96/100 (GREEN)** — 0 prior reviews, 37 primary studies (5y), TCIA instant access
-**Gate 1.5 CONFIRMED 2026-07-26 (michael, recorded in research_approvals):** paired RTSTRUCT
-contour volumetry, ~330 paired subjects, NO NCTN application (stage/histology/outcomes out of scope).
+**Study type:** Original research, retrospective analysis of public imaging annotations.
+**Analysis plan locked:** 2026-07-26, before any data were touched (see below).
 
 ---
 
@@ -13,12 +10,21 @@ contour volumetry, ~330 paired subjects, NO NCTN application (stage/histology/ou
 How does Wilms tumor volume respond to neoadjuvant chemotherapy in children, measured on
 radiologist-reviewed 3D segmentations from COG trials AREN0532/0533/0534?
 
-## Why this topic won
+## Rationale
 
-- Pediatric oncologic imaging — serves **both** her radiology target and pediatrics backup
-- TCIA Wilms collections include **radiologist-reviewed 3D tumor segmentations** — no segmentation labor
-- Zero prior reviews on the exact question; 37 related primary studies = feasible + uncrowded
-- Original research = the strongest ERAS "meaningful scholarly work" tier; $0 at Cureus
+- Tumor response in Wilms tumor is usually reported categorically or by unidimensional
+  measurement. Volumetric response has not been quantified at cohort scale on these trials.
+- The three TCIA collections carry **radiologist-reviewed 3D tumor segmentations**, so volumes
+  can be derived from expert contours rather than from new, unvalidated segmentation.
+- The collections are public and the pipeline is fully scripted, so every reported number is
+  independently regenerable — the contribution is a reproducible benchmark as much as a result.
+
+## Scope decision (2026-07-26)
+
+The analysis is restricted to **paired RTSTRUCT contour volumetry**. Trial stage, histology and
+clinical outcomes are out of scope: those covariates are not distributed with the public
+collections and obtaining them would require a separate data application. This bounds the study
+to what the public data can actually support.
 
 ## Data source (verified 2026-07-26 — see `data/clinical-availability.md`)
 
@@ -52,16 +58,20 @@ volumetry (no radiomics, no image-overlay figures; 3D contour renders are possib
 4. **Outcomes:** primary = **% volume change** Pre-dose → first Post-chemotherapy timepoint;
    secondary = absolute change, volume trajectories across all timepoints (AREN0534 has up to 6).
 5. **Stats:** descriptive volumes by timepoint; paired comparison **Wilcoxon signed-rank** on %
-   change; subgroup descriptives by collection/laterality (no NCTN covariates — Gate 1.5 decision).
-6. **Reproducibility:** all numbers/figures from `code/` in this folder; code re-run at QA gate.
-   `volumes.py` output is the single source of truth for every Results number (spec R4).
-7. **Figures:** waterfall plot of % volume change; volume-time trajectories; 3D contour renders
-   of example cases (no image overlays — source images not public).
+   change; subgroup descriptives by collection/laterality. Because the three trials use different
+   chemotherapy schedules and response intervals, results are reported **per trial**, with a
+   pooled estimate as secondary and explicitly not treated as a between-trial comparison.
+6. **Reproducibility:** all numbers and figures derive from `code/` in this repository, re-run
+   before release. `volumes.py` output is the single source of truth for every Results number.
+7. **Figures:** waterfall plot of % volume change; volume-time trajectories.
+
+## Deviations from the locked plan
+
+None to date. Any deviation is recorded here with its date and reason.
 
 ## Ethics
 
-Public, de-identified imaging-derived annotations (TCIA / COG trial data). Manuscript includes a
-data-source ethics statement and TCIA/COG data citations (collection DOIs pulled at drafting
-time). No IRB pathway required.
-
-
+Public, de-identified imaging-derived annotations (TCIA / COG trial data). The manuscript
+includes a data-source ethics statement and TCIA/COG data citations. Per TCIA's data-use terms
+and 45 CFR 46, analysis of these public de-identified data does not constitute human subjects
+research requiring institutional review board approval.

@@ -101,7 +101,7 @@ Across three Children's Oncology Group trials, neoadjuvant chemotherapy reduced 
 
 ## Data Availability
 
-Public annotation data: The Cancer Imaging Archive, collections AREN0532, AREN0533, AREN0534 [1-9]. Analysis code, cohort manifest, derived data, and the rendering pipeline that produced every number in this manuscript: https://github.com/mmart196/research-tcia-wilms-volumetric, archived at Zenodo (DOI: 10.5281/zenodo.21608440).
+Public annotation data: The Cancer Imaging Archive, collections AREN0532, AREN0533, AREN0534 [1-9]. Analysis code, cohort manifest, derived data, and the rendering pipeline that produced every number in this manuscript: https://github.com/mmart196/research-tcia-wilms-volumetric, archived at Zenodo (DOI: 10.5281/zenodo.21608439).
 
 ## Ethics Statement
 
