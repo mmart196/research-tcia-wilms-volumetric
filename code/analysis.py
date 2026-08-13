@@ -237,7 +237,7 @@ def main():
     ax.set_ylabel("Tumor volume change, pre → first post-chemo (%)")
     ax.set_title("Waterfall plot — volumetric response to neoadjuvant chemotherapy")
     fig.tight_layout()
-    fig.savefig(FIGS / "waterfall.png", dpi=200)
+    fig.savefig(FIGS / "waterfall.png", dpi=1200)
     plt.close(fig)
 
     fig, ax = plt.subplots(figsize=(7.5, 5))
@@ -267,7 +267,7 @@ def main():
     ax.set_title("Volume trajectories by trial (no pooled median: trials are not time-aligned)")
     ax.legend()
     fig.tight_layout()
-    fig.savefig(FIGS / "trajectories.png", dpi=200)
+    fig.savefig(FIGS / "trajectories.png", dpi=1200)
     plt.close(fig)
 
     with (DATA / "results.json").open("w") as f:

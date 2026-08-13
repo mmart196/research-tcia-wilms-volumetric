@@ -16,7 +16,7 @@ repository.**
 | `protocol.md` | The analysis plan, locked 2026-07-26 before any data were touched |
 | `code/` | The full pipeline: cohort assembly, contour volumetry, analysis, figures |
 | `data/` | Derived data — cohort manifest, per-lesion volumes, analysis output |
-| `draft/` | Manuscript and figures |
+| `draft/` | Manuscript, its source template, and figures |
 
 ## Method in one paragraph
 
@@ -38,6 +38,15 @@ across 1,141 lesions (Spearman ρ = 0.998). The check is in the pipeline and re-
 The derived data in `data/` are sufficient to regenerate every statistic and figure. Regenerating
 from source additionally requires downloading the RTSTRUCT collections from TCIA; see
 `protocol.md` for the collection identifiers and the inclusion rule.
+
+`draft/manuscript.md` is generated output, not a source file. It is rendered from
+`draft/manuscript_template.md` plus `data/results.json` by `code/render_draft.py`, so no number in
+the manuscript can be stated that the pipeline did not produce:
+
+```
+python code/analysis.py      # writes data/results.json and the figures
+python code/render_draft.py  # writes draft/manuscript.md from the template
+```
 
 ## Data source
 

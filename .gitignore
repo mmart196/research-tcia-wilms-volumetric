@@ -1,3 +1,5 @@
 *.dcm
 data/rtstruct/
 __pycache__/
+draft/*.docx
+draft/manuscript_blinded.md
