@@ -73,7 +73,7 @@ The three trials used different chemotherapy regimens and schedules, and the arc
 
 ### Pooled estimate (secondary, descriptive)
 
-Across all {N} subjects, median kidney tumor volume was {PRE_MED} mL (IQR {PRE_Q1}–{PRE_Q3}) before chemotherapy and {POST_MED} mL (IQR {POST_Q1}–{POST_Q3}) at the first post-chemotherapy timepoint, a median percent change of {PCT_MED}% (IQR {PCT_Q1}% to {PCT_Q3}%; Hodges–Lehmann estimate {HL_EST}%, 95% CI {HL_LO}% to {HL_HI}%). Volume decreased in {N_DEC} of {N} subjects and increased in {N_INC} (Wilcoxon signed-rank W = {W_STAT}, p = {W_P}). This pooled figure averages over heterogeneous, unmeasured response intervals and a cohort dominated by bilateral disease, and is presented as a descriptive summary only. Figure 1 shows the per-subject waterfall distribution; Figure 2 shows volume trajectories across all available chemotherapy timepoints.
+Across all {N} subjects, median kidney tumor volume was {PRE_MED} mL (IQR {PRE_Q1}–{PRE_Q3}) before chemotherapy and {POST_MED} mL (IQR {POST_Q1}–{POST_Q3}) at the first post-chemotherapy timepoint, a median percent change of {PCT_MED}% (IQR {PCT_Q1}% to {PCT_Q3}%; Hodges–Lehmann estimate {HL_EST}%, 95% CI {HL_LO}% to {HL_HI}%). Volume decreased in {N_DEC} of {N} subjects and increased in {N_INC} (Wilcoxon signed-rank W = {W_STAT}, p {W_P}). This pooled figure averages over heterogeneous, unmeasured response intervals and a cohort dominated by bilateral disease, and is presented as a descriptive summary only. Figure 1 shows the per-subject waterfall distribution; Figure 2 shows volume trajectories across all available chemotherapy timepoints.
 
 ## Discussion
 

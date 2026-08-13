@@ -79,7 +79,7 @@ The three trials used different chemotherapy regimens and schedules, and the arc
 
 ### Pooled estimate (secondary, descriptive)
 
-Across all 259 subjects, median kidney tumor volume was 550.8 mL (IQR 298.8–864.1) before chemotherapy and 109.7 mL (IQR 49.3–251.5) at the first post-chemotherapy timepoint, a median percent change of -78.2% (IQR -88.7% to -54.3%; Hodges–Lehmann estimate -71.6%, 95% CI -75.4% to -66.9%). Volume decreased in 240 of 259 subjects and increased in 19 (Wilcoxon signed-rank W = 1567, p = 1.1 × 10<sup>-36</sup>). This pooled figure averages over heterogeneous, unmeasured response intervals and a cohort dominated by bilateral disease, and is presented as a descriptive summary only. Figure 1 shows the per-subject waterfall distribution; Figure 2 shows volume trajectories across all available chemotherapy timepoints.
+Across all 259 subjects, median kidney tumor volume was 550.8 mL (IQR 298.8–864.1) before chemotherapy and 109.7 mL (IQR 49.3–251.5) at the first post-chemotherapy timepoint, a median percent change of -78.2% (IQR -88.7% to -54.3%; Hodges–Lehmann estimate -71.6%, 95% CI -75.4% to -66.9%). Volume decreased in 240 of 259 subjects and increased in 19 (Wilcoxon signed-rank W = 1567, p < 0.001). This pooled figure averages over heterogeneous, unmeasured response intervals and a cohort dominated by bilateral disease, and is presented as a descriptive summary only. Figure 1 shows the per-subject waterfall distribution; Figure 2 shows volume trajectories across all available chemotherapy timepoints.
 
 ## Discussion
 

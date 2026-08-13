@@ -48,11 +48,20 @@ def word(n):
 
 
 def fmt_p(p):
+    """Return the comparison operator AND the value, e.g. "< 0.001" or "= 0.032".
+
+    This used to emit "1.1 × 10<sup>-36</sup>" for very small p. Nothing in the
+    pipeline renders HTML: write_docx handles only **bold**, so the Word file
+    printed the tag literally, and it went to Pediatric Radiology that way. The
+    Cureus form is a plain-text paste, where it would do the same.
+
+    Reporting "p < 0.001" is the conventional form for a value this small and is
+    unambiguous in every output format, so the operator moved into the token and
+    the template reads "p {W_P}" rather than "p = {W_P}".
+    """
     if p < 0.001:
-        exp = math.floor(math.log10(p))
-        mant = p / 10 ** exp
-        return f"{mant:.1f} × 10<sup>{exp}</sup>"
-    return f"{p:.3f}"
+        return "< 0.001"
+    return f"= {p:.3f}"
 
 
 def main():
