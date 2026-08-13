@@ -3,3 +3,4 @@ data/rtstruct/
 __pycache__/
 draft/*.docx
 draft/manuscript_blinded.md
+code/explore_*.py
