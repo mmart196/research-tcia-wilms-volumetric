@@ -1,0 +1,38 @@
+[
+  {
+    "collection": "AREN0532",
+    "page": "https://www.cancerimagingarchive.net/analysis-result/aren0532-tumor-annotations/",
+    "metadata_links": [
+      "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_2025-12-03-1.csv",
+      "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_01122023.csv"
+    ],
+    "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_2025-12-03-1.csv",
+    "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0532_2025-12-03-1.csv",
+    "sha256": "82ed5a569d58ba9043d2ef6fc70e25f14425560eadfe2fac39914f94ec785e69",
+    "bytes": 1209528
+  },
+  {
+    "collection": "AREN0533",
+    "page": "https://www.cancerimagingarchive.net/analysis-result/aren0533-tumor-annotations/",
+    "metadata_links": [
+      "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0533_2025-12-19.csv",
+      "https://www.cancerimagingarchive.net/wp-content/uploads/AREN0533_Annotations_Metadata__01-12-2023.csv"
+    ],
+    "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0533_2025-12-19.csv",
+    "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0533_2025-12-19.csv",
+    "sha256": "fb9c2125857568d11ff3bbdc59afc8d4b5513a35f563a97cc3618ffcdc7f7e6a",
+    "bytes": 1500697
+  },
+  {
+    "collection": "AREN0534",
+    "page": "https://www.cancerimagingarchive.net/analysis-result/aren0534-tumor-annotations/",
+    "metadata_links": [
+      "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_2025-12-22.csv",
+      "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_01122023.csv"
+    ],
+    "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_2025-12-22.csv",
+    "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0534_2025-12-22.csv",
+    "sha256": "b63f7472ada25f161a0f0ef0378a887c4144872e064e8b96a74805af338429c5",
+    "bytes": 1883372
+  }
+]

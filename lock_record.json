@@ -1,0 +1,8 @@
+{
+  "locked_utc": "2026-09-22T11:08:21.687047+00:00",
+  "sha256": "c93d73c4525feea5158df79124c8b6d4fda4c4db2bb9e73483d8d7a77b46096a",
+  "prior_lock_utc": "2026-09-22T11:01:09.671755+00:00",
+  "prior_sha256": "28dd55cd142e98b4c0debd0b5bb728c74a1cb131511295f8922e8f2dd57441fd",
+  "status": "Post-audit amendment with pre-outcome source-name normalization addendum. Original outcomes/source records/metadata eligibility previously inspected; revised outcomes not yet calculated.",
+  "naming_rule": "Only omitted numeric ROIName suffix with exact unique TrackingUID and unchanged tracked kidney/known side is normalized."
+}

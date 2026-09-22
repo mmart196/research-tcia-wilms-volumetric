@@ -1,0 +1,66 @@
+[
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202262764334574.4",
+    "roi": "1",
+    "contour_index": 49,
+    "points": 45,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[7.47882987426457 0.664295003588137]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202282723059236.4",
+    "roi": "1",
+    "contour_index": 17,
+    "points": 198,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[-35.9098155402283 -0.065521381127952]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202242172857410",
+    "roi": "1",
+    "contour_index": 8,
+    "points": 73,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[-1.63955214213669 -30.5779096906549]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202241373535435.4",
+    "roi": "1",
+    "contour_index": 16,
+    "points": 65,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[4.33065984005519 0.251802273897032]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.20224217539250.4",
+    "roi": "1",
+    "contour_index": 0,
+    "points": 24,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[2.05920455895674 1.4332103533952]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202241373020521.4",
+    "roi": "1",
+    "contour_index": 2,
+    "points": 51,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[10.8633653208874 -4.08883385205385]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.2022325122322128.4",
+    "roi": "1",
+    "contour_index": 3,
+    "points": 82,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[-6.57915095117118 3.03922586279888]"
+  },
+  {
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202241393436334.4",
+    "roi": "1",
+    "contour_index": 3,
+    "points": 226,
+    "repeated_vertex_n": 0,
+    "polygon_reason": "Self-intersection[-0.293219631217853 26.5365935073574]"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.20224139385271.4",
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "bytes": 294116,
+  "elapsed_seconds": 7.477308988571167,
+  "file": "/workspace/scratch/d813069df87a/revision_work/raw/1.2.826.0.1.534147.756.812677238.20224139385271.4.zip"
+}

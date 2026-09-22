@@ -1,0 +1,11 @@
+{
+  "rows": 1143,
+  "status_counts": {
+    "verified": 1128,
+    "unresolved": 15
+  },
+  "reason_counts": {
+    "roi_name_tracking_anatomy_mismatch": 1,
+    "invalid_contour_coordinates": 14
+  }
+}
