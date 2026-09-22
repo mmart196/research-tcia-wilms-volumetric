@@ -1,0 +1,29 @@
+{
+  "ct": {
+    "n_patients": 227,
+    "n_paired_targets": 349,
+    "roi_timepoint_rows": 698,
+    "independent_pct_median": -77.17959210526058,
+    "flow_exclusions": {
+      "no_followup1_modality_annotation": 720,
+      "no_baseline_modality_annotation": 77,
+      "unmatched_target_set_or_labels": 13,
+      "source_object_not_verified": 8,
+      "ambiguous_examination": 2
+    }
+  },
+  "mr": {
+    "n_patients": 39,
+    "n_paired_targets": 75,
+    "roi_timepoint_rows": 150,
+    "independent_pct_median": -69.52807954414469,
+    "flow_exclusions": {
+      "no_baseline_modality_annotation": 932,
+      "no_followup1_modality_annotation": 66,
+      "unmatched_target_set_or_labels": 6,
+      "source_object_not_verified": 2,
+      "ambiguous_examination": 2
+    }
+  },
+  "all_invariants_passed": true
+}

@@ -8,22 +8,16 @@ the manuscript literally cannot state a number the pipeline did not produce.
 """
 import json
 import math
-import os
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 
-# Pediatric Radiology's technical check reported this DOI unresolvable on 2026-08-03.
-# It was derived from the version DOI ...440 by subtraction, on the assumption that a
-# Zenodo concept DOI is the version DOI minus one. Zenodo mints the concept DOI
-# separately, so that assumption was wrong and the journal proved it empirically.
-# Rendering is blocked until a human reads the real concept DOI off the Zenodo record
-# page, because a broken data-availability link has already cost one technical-check
-# round and would cost another. Set ALLOW_BAD_DOI=1 to build a draft package anyway;
-# nothing built that way may be submitted.
-KNOWN_BAD_DOI = "10.5281/zenodo.21608439"
+# On 2026-09-22 the concept DOI 10.5281/zenodo.21608439 resolved to the
+# published v1.0.2 record 21643257, whose metadata confirms that parent DOI.
+# The old hard-coded rejection was stale. Rendering is deliberately offline;
+# archive completeness and live DOI resolution are checked when a release is made.
 
 
 def fmt(x, nd=1):
@@ -149,15 +143,6 @@ def main():
     t["REFERENCES"] = "\n".join(ref_lines)
 
     tpl = (ROOT / "draft" / "manuscript_template.md").read_text(encoding="utf-8")
-    if KNOWN_BAD_DOI in tpl and not os.environ.get("ALLOW_BAD_DOI"):
-        raise SystemExit(
-            f"refusing to render: the template still cites {KNOWN_BAD_DOI}, which "
-            "Pediatric Radiology reported unresolvable on 2026-08-03. Read the concept "
-            "DOI off the Zenodo record page ('Cite all versions') and replace it. Do not "
-            "derive it from the version DOI, and do not revert to ...440 -- that record "
-            "still contains internal planning material. To build an unsubmittable draft "
-            "package anyway: ALLOW_BAD_DOI=1 python code/render_draft.py"
-        )
     out = tpl
     missing = []
     for k, v in t.items():
@@ -257,18 +242,22 @@ def _strip_frontmatter(text):
 
 
 import re as _re_mod
-_LIST_RE = _re_mod.compile(r"^\\d+[.)]\\s")
+_LIST_RE = _re_mod.compile(r"^\d+[.)]\s")
 
 
 def _md_runs(par, text):
-    """Add text to a paragraph, honouring **bold** spans."""
+    """Add text to a paragraph, honouring bold and numeric affiliation markers."""
     import re as _re
     for i, seg in enumerate(_re.split(r"\*\*(.+?)\*\*", text)):
         if not seg:
             continue
-        run = par.add_run(seg)
-        if i % 2 == 1:
-            run.bold = True
+        for j, piece in enumerate(_re.split(r"\^(\d+)\^", seg)):
+            if not piece:
+                continue
+            run = par.add_run(piece)
+            run.bold = i % 2 == 1
+            if j % 2 == 1:
+                run.font.superscript = True
 
 
 def _split_row(line):
@@ -384,4 +373,10 @@ def write_docx(md_text, path):
 
 
 if __name__ == "__main__":
-    main()
+    import subprocess
+    import sys
+    if "--legacy" in sys.argv:
+        sys.argv.remove("--legacy")
+        main()
+    else:
+        raise SystemExit(subprocess.call([sys.executable, str(Path(__file__).with_name("render_revision.py")), *sys.argv[1:]]))

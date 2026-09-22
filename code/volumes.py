@@ -4,19 +4,27 @@ v2 — rewritten for RTSTRUCT (the TCIA Wilms collections contain RTSTRUCT annot
 objects, not DICOM SEG pixel data; see data/clinical-availability.md). v1 parsed
 SEG pixel arrays and does not apply to this dataset.
 
-Volume per ROI (protocol, locked 2026-07-26):
+Repaired contour method (2026-09-22; not the original locked implementation):
 
-    slice area  = 1/2 |sum(p_i x p_{i+1})|   (Newell's method, closed-planar contours)
-    volume (mL) = sum(slice areas) x median inter-slice spacing / 1000
+    slice area  = area of disjoint CLOSED_PLANAR polygons, or CLOSEDPLANAR_XOR
+    volume (mL) = sum(unique-plane areas) x uniform inter-plane spacing / 1000
+
+This is a slab approximation, including a half-spacing extension at each end.
+It is not an image-based segmentation validation. Ambiguous topology, invalid
+polygons, nonparallel planes, and irregular spacing are rejected, not repaired.
+The historical committed CSV predates these safeguards; a fresh raw-data run is
+required before describing any volumes as recalculated with this implementation.
 
 Usage:
 
-    python volumes.py                       # reads ../data/rtstruct, writes ../data/volumes.csv
-    python volumes.py --limit 20            # smoke test on first N files
+    python code/volumes.py                  # current verified intended-ROI diagnostic
+    python code/volumes.py --help           # raw/source/output directory options
+    python code/volumes.py --legacy         # historical all-ROI extraction only
 
 Joins each series to data/cohort_series.csv (from download.py) for timepoint/label.
 Extracts age/sex from RTSTRUCT headers, source modality from the referenced SOP class.
-Every number in Results must regenerate from this script (spec R4).
+This optional contour sensitivity pipeline is separate from the primary analysis
+of the archive-reported ROI volumes. It does not validate the clinical contours.
 """
 import argparse
 import csv
@@ -27,6 +35,7 @@ from pathlib import Path
 
 import numpy as np
 import pydicom
+from shapely.geometry import Polygon
 
 DATA = Path(__file__).resolve().parent.parent / "data"
 SOP_CLASS = {
@@ -46,66 +55,142 @@ def parse_age(s):
 
 def laterality(name):
     u = name.upper()
-    if re.search(r"\b(RT|RIGHT)\b", u):
+    right = bool(re.search(r"\b(R|RT|RIGHT)\b", u))
+    left = bool(re.search(r"\b(L|LT|LEFT)\b", u))
+    if right and left:
+        return "unknown"  # Conflicting tokens do not establish bilateral anatomy.
+    if right:
         return "right"
-    if re.search(r"\b(LT|LEFT)\b", u):
+    if left:
         return "left"
     return "unknown"
 
 
 def source_class(ds):
-    """Modality of the imaging this RTSTRUCT references ('CT'/'MR'/other UID/None)."""
+    """Inspect every image reference; do not infer a modality from the first one.
+
+    Return CT, MR, mixed (conflicting SOP classes), or unknown. Both the source
+    series references and per-contour image references are checked. This is an
+    object-level check; a mixed object needs ROI-specific inspection before use.
+    """
+    uids = set()
+
+    def record(images):
+        for image in images:
+            uids.add(str(getattr(image, "ReferencedSOPClassUID", "")))
+
     for ref in ds.get("ReferencedFrameOfReferenceSequence", []):
         for rs in ref.get("RTReferencedStudySequence", []):
             for rser in rs.get("RTReferencedSeriesSequence", []):
-                imgs = rser.get("ContourImageSequence", [])
-                if imgs:
-                    uid = str(imgs[0].ReferencedSOPClassUID)
-                    return SOP_CLASS.get(uid, uid)
-    return None
+                record(rser.get("ContourImageSequence", []))
+    for roi in ds.get("ROIContourSequence", []):
+        for contour in roi.get("ContourSequence", []):
+            record(contour.get("ContourImageSequence", []))
+    if len(uids) > 1:
+        return "mixed"
+    return SOP_CLASS.get(next(iter(uids)), "unknown") if uids else "unknown"
 
 
 def roi_volume_ml(contour_seq):
-    """(volume_mL, n_slices, flag) for one ROIContourSequence item. None volume if unusable."""
-    areas, positions, normals = [], [], []
-    for c in contour_seq:
-        if getattr(c, "ContourGeometricType", "") != "CLOSED_PLANAR":
-            continue
-        pts = np.asarray(c.ContourData, dtype=float).reshape(-1, 3)
-        if len(pts) < 3:
-            continue
-        nvec = np.cross(pts, np.roll(pts, -1, axis=0)).sum(axis=0)  # Newell
-        norm = np.linalg.norm(nvec)
-        if norm == 0:
-            continue
-        areas.append(norm / 2.0)
-        normals.append(nvec / norm)
-        positions.append(pts.mean(axis=0))
-    if not areas:
-        return None, 0, "no_closed_planar_contours"
-    if len(areas) == 1:
-        return None, 1, "single_slice"
+    """Return (mL, unique-plane count, QC flag); reject an unsafe ROI in full.
 
-    # vertex winding is arbitrary per slice; align normal signs before summing,
-    # otherwise opposing windings cancel and the axis becomes degenerate
-    ref = normals[0]
-    aligned = [n if float(np.dot(n, ref)) >= 0 else -n for n in normals]
-    axis = np.sum(aligned, axis=0)
-    axis_norm = np.linalg.norm(axis)
-    if axis_norm == 0:
-        return None, len(areas), "degenerate_axis"
-    axis /= axis_norm
-    pos = [float(np.dot(p, axis)) for p in positions]
-    order = np.argsort(pos)
-    areas = [areas[i] for i in order]
-    pos = [pos[i] for i in order]
-    spacing = float(np.median(np.diff(pos)))
-    if spacing <= 0:
-        return None, len(areas), "nonpositive_spacing"
-    vol = float(sum(areas) * spacing / 1000.0)  # mm^3 -> mL
-    if not np.isfinite(vol):
-        return None, len(areas), "non_finite_volume"
-    return vol, len(areas), ""
+    Coordinates are millimetres. Planarity/plane grouping tolerance is 0.001 mm;
+    parallel normals must agree within 1e-6 in absolute dot product. Spacing
+    must be uniform within 1% plus 0.001 mm. These are numerical QC tolerances,
+    not evidence that all intervening image slices have contours.
+
+    DICOM PS3.3 C.8.8.6 requires an ROI using CLOSEDPLANAR_XOR to use that type
+    throughout. XOR implements holes explicitly. For ordinary CLOSED_PLANAR,
+    separate disjoint polygons on the same plane are summed; nesting/overlap
+    is rejected rather than guessed to represent a hole. A valid simple
+    keyhole polygon is accepted; self-touching/invalid keyholes are not repaired.
+    https://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.8.8.6.html
+    """
+    contours = list(contour_seq)
+    if not contours:
+        return None, 0, "no_closed_planar_contours"
+    kinds = {str(getattr(c, "ContourGeometricType", "")) for c in contours}
+    if "CLOSEDPLANAR_XOR" in kinds and kinds != {"CLOSEDPLANAR_XOR"}:
+        return None, 0, "mixed_xor_contour_types"
+    if not kinds <= {"CLOSED_PLANAR", "CLOSEDPLANAR_XOR"}:
+        return None, 0, "unsupported_contour_type"
+
+    tolerance = 0.001
+    records = []
+    for c in contours:
+        try:
+            pts = np.asarray(c.ContourData, dtype=float).reshape(-1, 3)
+        except (AttributeError, TypeError, ValueError):
+            return None, 0, "malformed_contour_data"
+        if len(pts) < 3 or not np.isfinite(pts).all():
+            return None, 0, "invalid_contour_points"
+        if hasattr(c, "NumberOfContourPoints"):
+            try:
+                if int(c.NumberOfContourPoints) != len(pts):
+                    return None, 0, "contour_point_count_mismatch"
+            except (TypeError, ValueError):
+                return None, 0, "contour_point_count_mismatch"
+        centre = pts.mean(axis=0)
+        centred = pts - centre
+        nvec = np.cross(centred, np.roll(centred, -1, axis=0)).sum(axis=0)
+        norm = float(np.linalg.norm(nvec))
+        if not np.isfinite(norm) or norm <= 1e-12:
+            return None, 0, "degenerate_contour"
+        normal = nvec / norm
+        if np.max(np.abs(centred @ normal)) > tolerance:
+            return None, 0, "nonplanar_contour"
+        records.append((pts, centre, normal))
+
+    axis = records[0][2]
+    if any(abs(float(np.dot(axis, normal))) < 1 - 1e-6 for _, _, normal in records):
+        return None, 0, "nonparallel_contour_planes"
+    # A shared orthonormal frame avoids orientation- or winding-dependent areas.
+    helper = np.eye(3)[int(np.argmin(np.abs(axis)))]
+    u = np.cross(axis, helper)
+    u /= np.linalg.norm(u)
+    v = np.cross(axis, u)
+    origin = records[0][1]
+    projected = []
+    for pts, centre, _ in records:
+        # Also validate against the common axis, not just each contour's normal.
+        if np.max(np.abs((pts - centre) @ axis)) > tolerance:
+            return None, 0, "nonparallel_contour_planes"
+        xy = np.column_stack(((pts - origin) @ u, (pts - origin) @ v))
+        polygon = Polygon(xy)
+        if not polygon.is_valid or polygon.area <= 1e-12:
+            return None, 0, "invalid_polygon"
+        projected.append((float(np.dot(centre - origin, axis)), polygon))
+
+    planes = []
+    for position, polygon in sorted(projected, key=lambda item: item[0]):
+        if planes and abs(position - planes[-1][0]) <= tolerance:
+            planes[-1][1].append(polygon)
+        else:
+            planes.append((position, [polygon]))
+    n_slices = len(planes)
+    if n_slices < 2:
+        return None, n_slices, "single_slice"
+
+    areas = []
+    for _, polygons in planes:
+        if kinds == {"CLOSEDPLANAR_XOR"}:
+            combined = polygons[0]
+            for polygon in polygons[1:]:
+                combined = combined.symmetric_difference(polygon)
+            areas.append(float(combined.area))
+        else:
+            for i, polygon in enumerate(polygons):
+                if any(polygon.intersection(other).area > 1e-9 for other in polygons[:i]):
+                    return None, n_slices, "overlapping_or_nested_closed_planar"
+            areas.append(float(sum(polygon.area for polygon in polygons)))
+    gaps = np.diff([position for position, _ in planes])
+    spacing = float(np.median(gaps))
+    if not np.allclose(gaps, spacing, rtol=0.01, atol=tolerance):
+        return None, n_slices, "irregular_plane_spacing"
+    vol = float(sum(areas) * spacing / 1000.0)
+    if not np.isfinite(vol) or vol <= 0:
+        return None, n_slices, "nonpositive_or_nonfinite_volume"
+    return vol, n_slices, ""
 
 
 def main():
@@ -214,4 +299,21 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if "--legacy" in sys.argv[1:]:
+        sys.argv.remove("--legacy")
+        main()
+    else:
+        # The imported geometry functions remain available, but the default CLI
+        # must not overwrite historical all-ROI totals as if they were current.
+        arguments = sys.argv[1:]
+        defaults = {
+            "--verification": DATA / "revision" / "source" / "verification.csv",
+            "--raw-dir": DATA / "revision" / "raw",
+            "--output-dir": DATA / "revision" / "source",
+        }
+        for flag, value in defaults.items():
+            if not any(arg == flag or arg.startswith(flag + "=") for arg in arguments):
+                arguments.extend([flag, str(value)])
+        sys.argv = [sys.argv[0], *arguments]
+        from validate_geometry import main as current_main
+        current_main()

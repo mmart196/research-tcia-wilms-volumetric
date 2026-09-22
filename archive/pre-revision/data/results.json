@@ -1,0 +1,114 @@
+{
+  "flow": {
+    "metadata_subjects_any_kidney_seg": 1047,
+    "metadata_paired_pre_post": 330,
+    "extracted_subjects_any_usable_ct_volume": 299,
+    "paired_analyzed": 259,
+    "excluded_no_pre_or_post_volume": 71
+  },
+  "cohort": {
+    "n": 259,
+    "age_median": 3.0,
+    "age_iqr": [
+      3.0,
+      3.0
+    ],
+    "age_min": 0.9166666666666666,
+    "age_max": 9.0,
+    "sex_counts": {
+      "F": 144,
+      "M": 114,
+      "O": 1
+    },
+    "laterality_counts": {
+      "bilateral": 94,
+      "right": 86,
+      "left": 74,
+      "unknown": 5
+    },
+    "collection_counts": {
+      "AREN0534": 152,
+      "AREN0533": 83,
+      "AREN0532": 24
+    }
+  },
+  "primary": {
+    "pre_median_ml": 550.77,
+    "pre_iqr_ml": [
+      298.765,
+      864.065
+    ],
+    "post_median_ml": 109.66000000000001,
+    "post_iqr_ml": [
+      49.28,
+      251.465
+    ],
+    "first_post_timepoint_counts": {
+      "1": 248,
+      "2": 9,
+      "3": 2
+    },
+    "pct_change_median": -78.18220219656436,
+    "pct_change_iqr": [
+      -88.73969364949285,
+      -54.25417408603471
+    ],
+    "pct_change_mean": -62.51944550010142,
+    "hl_pseudomedian": -71.61472635222414,
+    "hl_ci_95": [
+      -75.44455276592016,
+      -66.9389613778106
+    ],
+    "n_decreased": 240,
+    "n_increased": 19,
+    "n_unchanged": 0,
+    "wilcoxon_statistic": 1567.0,
+    "wilcoxon_p": 1.0872527029435294e-36
+  },
+  "subgroups_by_collection": {
+    "AREN0532": {
+      "n": 24,
+      "median_pct_change": -86.03129573317719,
+      "iqr_pct_change": [
+        -93.49578183625415,
+        -73.77546535271964
+      ]
+    },
+    "AREN0533": {
+      "n": 83,
+      "median_pct_change": -79.94563791993514,
+      "iqr_pct_change": [
+        -86.30827100080124,
+        -65.71935636804326
+      ]
+    },
+    "AREN0534": {
+      "n": 152,
+      "median_pct_change": -71.65820354273504,
+      "iqr_pct_change": [
+        -88.89800178700715,
+        -46.424843146219494
+      ]
+    }
+  },
+  "volume_validation": {
+    "n_rois": 1141,
+    "spearman_rho": 0.9983159848287193,
+    "median_abs_pct_diff": 3.9731039635256047,
+    "iqr_abs_pct_diff": [
+      1.3084517311368244,
+      12.622172577492327
+    ],
+    "size_corr_absdiff": -0.6129648440419571,
+    "pre_n": 473,
+    "pre_signed_median_pct": 0.6933659966316008,
+    "pre_abs_median_pct": 2.659257789243893,
+    "pre_median_tool_vol_ml": 207.44,
+    "post_n": 668,
+    "post_signed_median_pct": 0.35816831392650605,
+    "post_abs_median_pct": 5.62739165032108,
+    "post_median_tool_vol_ml": 29.07
+  },
+  "table1_md": "| Characteristic | AREN0532 (n=24) | AREN0533 (n=83) | AREN0534 (n=152) | Overall (n=259) |\n|---|---|---|---|---|\n| Pre-chemo volume, mL, median (IQR) | 677.6 (443.9\u20131013.2) | 752.3 (525.7\u20131035.9) | 380.1 (156.0\u2013667.9) | 550.8 (298.8\u2013864.1) |\n| First post-chemo volume, mL, median (IQR) | 91.7 (58.1\u2013192.5) | 160.5 (84.2\u2013276.8) | 83.9 (30.5\u2013221.8) | 109.7 (49.3\u2013251.5) |\n| Volume change, %, median (IQR) | -86.0 (-93.5\u2013-73.8) | -79.9 (-86.3\u2013-65.7) | -71.7 (-88.9\u2013-46.4) | -78.2 (-88.7\u2013-54.3) |\n| Sex, male/female | 11/13 | 41/42 | 62/89 | 114/144 |\n| Laterality, left/right/bilateral | 8/15/1 | 38/42/0 | 28/29/93 | 74/86/94 |",
+  "flow_postop_only_excluded": 1
+}

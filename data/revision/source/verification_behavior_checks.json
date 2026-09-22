@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "synthetic_datasets_checked": 6,
+  "behaviors": [
+    "unique tracked ROI selected despite untracked duplicate",
+    "valid single-plane polygon accepted for stored-volume endpoint",
+    "anatomy label conflict rejected",
+    "declared point-count mismatch rejected",
+    "NaN coordinate rejected",
+    "study-date mismatch rejected",
+    "nonunique intended TrackingUID rejected"
+  ],
+  "pydicom_version": "3.0.2"
+}
