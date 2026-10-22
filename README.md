@@ -105,8 +105,8 @@ Close agreement between two calculations from the same annotations does not vali
 
 ## Version and citation
 
-The corrected analysis is on the default branch, merged from `revision/cureus-data-corrections-2026-09-22`. Record the commit used. Tagged releases v1.0.0 to v1.0.2 contain the superseded analysis. The code availability statement in the revised manuscript identifies this repository.
+The corrected analysis is on the default branch, merged from `revision/cureus-data-corrections-2026-09-22`, and is released as v2.0.0. Cite that release or record the commit used. The code availability statement in the revised manuscript identifies this repository.
 
-The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.21608439) resolves, but its current v1.0.2 archive contains the **superseded analysis** and does not fully render the current manuscript. It is not the archival source of the corrected results. This revision does not claim a new Zenodo release or DOI. A future archive must include the complete source template, data snapshots, verification records, dependency lock, and code, and must be tested from the downloaded release artifact.
+Release v2.0.0 (October 22, 2026) contains the corrected analysis, the peer-review additions, the source template, data snapshots, verification records, dependency lock, and code. Its contents were tested from a clean export before release (see `FINAL_VALIDATION.md`). The [Zenodo concept DOI](https://doi.org/10.5281/zenodo.21608439) resolves to the most recent archived release. Releases v1.0.0 to v1.0.2 contain the **superseded analysis** and are not the source of the corrected results.
 
 Cite TCIA and the specific imaging and annotation dataset versions as well as the analysis. Dataset references are generated from `draft/citation_library.json` into the manuscript reference list.

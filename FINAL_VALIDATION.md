@@ -22,3 +22,13 @@ Geometric measurements were computable for 432 of 698 selected CT ROI-timepoint 
 The existing Zenodo v1.0.2 archive is superseded and incomplete for the corrected manuscript. No new archived release or DOI is claimed. A future release should be tested from its downloaded archive, including the template, metadata, verification records, lockfiles, and code.
 
 This record documents computational verification. It does not change journal-submission gate status or record author approval.
+
+## Release check — October 22, 2026 (v2.0.0)
+
+Before tagging v2.0.0, a clean export of the default branch (merge commit fada0cd; later commits change documentation only) was installed in a new Python 3.12.3 virtual environment from `code/requirements-lock.txt` (`pip check`: no broken requirements). This is not the 3.12.14 interpreter used on September 22.
+
+- All 17 analytic and regression tests passed.
+- `analyze_revision.py`, `geometry_sensitivity.py`, and `revision_followup_flow.py` were rerun into a separate output directory. CT and MRI patient flow, flow tables, selected targets, paired patients, primary and sensitivity tables, complete geometry pairs, and the follow-up tabulation matched the committed files byte for byte: 227 CT pairs, 39 MRI pairs, 57 complete geometry pairs, and 720 patients without a CT follow-up #1 renal segmentation (479 / 198 / 43).
+- The Figure 1 flow diagram regenerated in this environment has the same counts and layout as the committed figure. Its PNG bytes differ because the committed figure was rendered with matplotlib 3.11.2, not the pinned 3.10.8. The committed figure is the version used in the revised article.
+
+This check establishes computational reproducibility of the released package. It does not establish anatomical validity of the source annotations.

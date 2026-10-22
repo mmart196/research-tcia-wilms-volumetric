@@ -1,6 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software/data package, please cite it as below."
-title: "Longitudinal Volumetry of Annotated Renal Target Lesions in Three Children's Oncology Group Trial Archives: reproducibility package"
+title: "Archive-Recorded Volume Change in Matched Renal Target Lesions: reproducibility package"
+version: 2.0.0
+date-released: 2026-10-22
 authors:
   - family-names: Velasco
     given-names: Rachel
@@ -12,7 +14,8 @@ keywords:
   - nephroblastoma
   - pediatric radiology
   - volumetry
-  - neoadjuvant chemotherapy
+  - imaging annotations
+  - secondary analysis
   - The Cancer Imaging Archive
   - Children's Oncology Group
   - reproducible research
