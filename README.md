@@ -19,6 +19,7 @@ The original results and methods have been superseded. The dated amendment openl
 | `code/validate_geometry.py` | Intended-ROI contour recomputation from downloaded RTSTRUCTs |
 | `code/geometry_sensitivity.py` | Comparison on the exact primary targets and complete computable patient pairs |
 | `code/render_revision.py` | Manuscript generation with numbered references, Word tables, and figures |
+| `code/revision_followup_flow.py` | Peer-review addition: descriptive tabulation of archive content after baseline for patients without a CT follow-up #1 renal segmentation, and the patient-selection flow diagram (Figure 1 of the revised article) |
 | `draft/manuscript_template.md` | Manuscript source; edit this rather than generated manuscript files |
 | `draft/citation_library.json` | Verified source records used to generate first-appearance citation numbering |
 | `tests/` | Analytic geometry, target-selection, and formatting regression checks |
@@ -55,6 +56,21 @@ The first analysis rebuilds patient eligibility and all primary and timing/MRI s
 
 These commands start with the included source-verification and contour diagnostic records. They do not themselves download or independently verify the raw annotation objects.
 
+## Peer-review additions (October 2026)
+
+During peer review, the reviewers asked why follow-up annotations were absent and requested a patient-selection flow diagram. `code/revision_followup_flow.py` reads only the committed current metadata snapshots and `patient_flow_ct.csv`. It does not read volumes or outcomes and does not change eligibility:
+
+```bash
+.venv/bin/python code/revision_followup_flow.py \
+  --metadata-dir data/revision/metadata \
+  --flow data/revision/output/patient_flow_ct.csv \
+  --output-dir data/revision/output
+```
+
+It writes `followup_absence_ct.csv` (one row per excluded patient), `followup_absence_summary.json`, and `figure_flow_ct.png`/`.pdf`. Of the 720 patients without a CT renal segmentation at Post-Chemotherapy #1, 479 have no annotation record at any later visit, 198 have later records without a renal segmentation, and 43 have a renal segmentation only on MRI or at a later visit. The archive does not record why follow-up annotations are absent.
+
+`draft/` holds the manuscript source prepared for the original submission. Revisions made during peer review were entered directly in the journal's submission system and are not rendered from this template.
+
 ## Source verification and optional contour recomputation
 
 The source-verification pipeline checks each selected annotation against its downloaded RTSTRUCT: patient/examination identity, date, referenced image series and modality, intended TrackingUID and ROI number/name, contour presence, and stored ROI Volume. An unrelated ROI in the same object is not added to a renal target. A missing target is not assigned zero volume. Complete matched target sets, unique source examinations, and chronological ordering are required. CT and MRI are analyzed separately.
@@ -89,7 +105,7 @@ Close agreement between two calculations from the same annotations does not vali
 
 ## Version and citation
 
-Use the corrected [revision branch](https://github.com/mmart196/research-tcia-wilms-volumetric/tree/revision/cureus-data-corrections-2026-09-22) and record the commit used. The code availability statement in the revised manuscript identifies this corrected package.
+The corrected analysis is on the default branch, merged from `revision/cureus-data-corrections-2026-09-22`. Record the commit used. Tagged releases v1.0.0 to v1.0.2 contain the superseded analysis. The code availability statement in the revised manuscript identifies this repository.
 
 The existing [Zenodo concept DOI](https://doi.org/10.5281/zenodo.21608439) resolves, but its current v1.0.2 archive contains the **superseded analysis** and does not fully render the current manuscript. It is not the archival source of the corrected results. This revision does not claim a new Zenodo release or DOI. A future archive must include the complete source template, data snapshots, verification records, dependency lock, and code, and must be tested from the downloaded release artifact.
 
