@@ -1,0 +1,721 @@
+patient_id,collection,category,detail,post_baseline_visits,nonrenal_post_baseline_sites
+AREN0532-PAPWLH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAPWWT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAPXAS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAPXKW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAPYIG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAPYVW,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PARAEB,AREN0532,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #3,LUNG
+AREN0532-PARANI,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PARCEW,AREN0532,no_post_baseline_records,,,
+AREN0532-PARCEX,AREN0532,no_post_baseline_records,,,
+AREN0532-PARCHR,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #2,
+AREN0532-PARDGD,AREN0532,no_post_baseline_records,,,
+AREN0532-PARDHH,AREN0532,no_post_baseline_records,,,
+AREN0532-PARDIU,AREN0532,no_post_baseline_records,,,
+AREN0532-PAREVK,AREN0532,no_post_baseline_records,,,
+AREN0532-PARFBG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARGJP,AREN0532,no_post_baseline_records,,,
+AREN0532-PARGLH,AREN0532,no_post_baseline_records,,,
+AREN0532-PARIAT,AREN0532,no_post_baseline_records,,,
+AREN0532-PARIPY,AREN0532,no_post_baseline_records,,,
+AREN0532-PARJFD,AREN0532,no_post_baseline_records,,,
+AREN0532-PARJUE,AREN0532,no_post_baseline_records,,,
+AREN0532-PARJXS,AREN0532,no_post_baseline_records,,,
+AREN0532-PARJYZ,AREN0532,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #3,LUNG
+AREN0532-PARKHJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARKMG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARLJM,AREN0532,no_post_baseline_records,,,
+AREN0532-PARMAX,AREN0532,no_post_baseline_records,,,
+AREN0532-PARMEK,AREN0532,no_post_baseline_records,,,
+AREN0532-PARMJS,AREN0532,no_post_baseline_records,,,
+AREN0532-PARMKJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARMRW,AREN0532,no_post_baseline_records,,,
+AREN0532-PARPBG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARPCJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARPTM,AREN0532,no_post_baseline_records,,,
+AREN0532-PARPVM,AREN0532,no_post_baseline_records,,,
+AREN0532-PARRGT,AREN0532,no_post_baseline_records,,,
+AREN0532-PARRIE,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #2,
+AREN0532-PARRLE,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PARRVL,AREN0532,no_post_baseline_records,,,
+AREN0532-PARRZT,AREN0532,no_post_baseline_records,,,
+AREN0532-PARSEX,AREN0532,no_post_baseline_records,,,
+AREN0532-PARSUE,AREN0532,no_post_baseline_records,,,
+AREN0532-PARSYJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARSZA,AREN0532,no_post_baseline_records,,,
+AREN0532-PARSZI,AREN0532,renal_segmentation_other_modality_or_visit,ct_at_later_visit_only,Post-Chemotherapy #1;Post-Chemotherapy #2,RETROPERITONEAL LYMPH NODE
+AREN0532-PARTCL,AREN0532,no_post_baseline_records,,,
+AREN0532-PARTMC,AREN0532,no_post_baseline_records,,,
+AREN0532-PARUFG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARUJB,AREN0532,no_post_baseline_records,,,
+AREN0532-PARUNG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARVJY,AREN0532,no_post_baseline_records,,,
+AREN0532-PARVXG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARWMX,AREN0532,no_post_baseline_records,,,
+AREN0532-PARWWR,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXEA,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXGM,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXVJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXVZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXWA,AREN0532,no_post_baseline_records,,,
+AREN0532-PARXWP,AREN0532,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #1,LUNG
+AREN0532-PARYEJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PARYIY,AREN0532,no_post_baseline_records,,,
+AREN0532-PARYSW,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZAE,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZBF,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZBT,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZBV,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZGN,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZJB,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZSG,AREN0532,no_post_baseline_records,,,
+AREN0532-PARZUR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASABA,AREN0532,no_post_baseline_records,,,
+AREN0532-PASABF,AREN0532,no_post_baseline_records,,,
+AREN0532-PASACG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASACU,AREN0532,no_post_baseline_records,,,
+AREN0532-PASAKZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASANX,AREN0532,no_post_baseline_records,,,
+AREN0532-PASBAU,AREN0532,no_post_baseline_records,,,
+AREN0532-PASBEP,AREN0532,no_post_baseline_records,,,
+AREN0532-PASBRT,AREN0532,no_post_baseline_records,,,
+AREN0532-PASBWD,AREN0532,no_post_baseline_records,,,
+AREN0532-PASBYB,AREN0532,no_post_baseline_records,,,
+AREN0532-PASCWA,AREN0532,no_post_baseline_records,,,
+AREN0532-PASCWY,AREN0532,no_post_baseline_records,,,
+AREN0532-PASCYK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDDI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDFX,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDIS,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDSM,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDSW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASDSY,AREN0532,no_post_baseline_records,,,
+AREN0532-PASEAH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASEHT,AREN0532,no_post_baseline_records,,,
+AREN0532-PASEID,AREN0532,no_post_baseline_records,,,
+AREN0532-PASFIK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASFKV,AREN0532,no_post_baseline_records,,,
+AREN0532-PASFZL,AREN0532,no_post_baseline_records,,,
+AREN0532-PASGJW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASGJX,AREN0532,no_post_baseline_records,,,
+AREN0532-PASGPG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASGRV,AREN0532,no_post_baseline_records,,,
+AREN0532-PASGUK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASHGR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASHXJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASICD,AREN0532,no_post_baseline_records,,,
+AREN0532-PASIPG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASJAE,AREN0532,no_post_baseline_records,,,
+AREN0532-PASJEP,AREN0532,no_post_baseline_records,,,
+AREN0532-PASJJI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASJTL,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKLG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKLH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKPD,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKSW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKUK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASKWK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASLBI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASLGV,AREN0532,no_post_baseline_records,,,
+AREN0532-PASLNM,AREN0532,no_post_baseline_records,,,
+AREN0532-PASMLW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASMPB,AREN0532,no_post_baseline_records,,,
+AREN0532-PASMPS,AREN0532,no_post_baseline_records,,,
+AREN0532-PASNRS,AREN0532,no_post_baseline_records,,,
+AREN0532-PASNXA,AREN0532,no_post_baseline_records,,,
+AREN0532-PASNXZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASNYI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASPAH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRBJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRIT,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRLR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRPL,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRTK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASRYN,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSAC,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSCY,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSFT,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSGU,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSMM,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSTK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSTW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASSZH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASTES,AREN0532,no_post_baseline_records,,,
+AREN0532-PASTKG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASTTR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASTUE,AREN0532,no_post_baseline_records,,,
+AREN0532-PASTZS,AREN0532,no_post_baseline_records,,,
+AREN0532-PASUBI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASULC,AREN0532,no_post_baseline_records,,,
+AREN0532-PASUMF,AREN0532,no_post_baseline_records,,,
+AREN0532-PASURB,AREN0532,no_post_baseline_records,,,
+AREN0532-PASUVP,AREN0532,no_post_baseline_records,,,
+AREN0532-PASUVV,AREN0532,no_post_baseline_records,,,
+AREN0532-PASUVZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASVEH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASVEM,AREN0532,no_post_baseline_records,,,
+AREN0532-PASVFZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWFC,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWKZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWRK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWRR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWVI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWWX,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWXP,AREN0532,no_post_baseline_records,,,
+AREN0532-PASWYH,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXEV,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXFZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXMW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXNG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXRC,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXRU,AREN0532,no_post_baseline_records,,,
+AREN0532-PASXXL,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYBW,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYEK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYFG,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYHK,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYPI,AREN0532,no_post_baseline_records,,,
+AREN0532-PASYVR,AREN0532,no_post_baseline_records,,,
+AREN0532-PASZHF,AREN0532,no_post_baseline_records,,,
+AREN0532-PASZJY,AREN0532,no_post_baseline_records,,,
+AREN0532-PASZNV,AREN0532,no_post_baseline_records,,,
+AREN0532-PATABT,AREN0532,no_post_baseline_records,,,
+AREN0532-PATABW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATACT,AREN0532,no_post_baseline_records,,,
+AREN0532-PATAFU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATAUL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATAUY,AREN0532,no_post_baseline_records,,,
+AREN0532-PATBGN,AREN0532,no_post_baseline_records,,,
+AREN0532-PATBPA,AREN0532,no_post_baseline_records,,,
+AREN0532-PATCFZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATCYM,AREN0532,no_post_baseline_records,,,
+AREN0532-PATDPL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATDSI,AREN0532,no_post_baseline_records,,,
+AREN0532-PATDTR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATDXJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATDZZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATEKT,AREN0532,no_post_baseline_records,,,
+AREN0532-PATEZN,AREN0532,no_post_baseline_records,,,
+AREN0532-PATFFD,AREN0532,no_post_baseline_records,,,
+AREN0532-PATFKD,AREN0532,no_post_baseline_records,,,
+AREN0532-PATFMF,AREN0532,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1,
+AREN0532-PATGXH,AREN0532,no_post_baseline_records,,,
+AREN0532-PATHMK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATHUH,AREN0532,no_post_baseline_records,,,
+AREN0532-PATIIC,AREN0532,no_post_baseline_records,,,
+AREN0532-PATIPN,AREN0532,no_post_baseline_records,,,
+AREN0532-PATIWT,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJFL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJIB,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJML,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJUU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJWJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATJZG,AREN0532,no_post_baseline_records,,,
+AREN0532-PATKBA,AREN0532,no_post_baseline_records,,,
+AREN0532-PATKHP,AREN0532,renal_segmentation_other_modality_or_visit,ct_at_later_visit_only,Post-Chemotherapy #2,
+AREN0532-PATKND,AREN0532,no_post_baseline_records,,,
+AREN0532-PATKNL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLGD,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLGF,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLHK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLRB,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLRD,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLUC,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLUL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATLWU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATMCD,AREN0532,no_post_baseline_records,,,
+AREN0532-PATMVP,AREN0532,no_post_baseline_records,,,
+AREN0532-PATMVR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATNEF,AREN0532,no_post_baseline_records,,,
+AREN0532-PATNVG,AREN0532,no_post_baseline_records,,,
+AREN0532-PATNVV,AREN0532,no_post_baseline_records,,,
+AREN0532-PATPGX,AREN0532,no_post_baseline_records,,,
+AREN0532-PATPHC,AREN0532,no_post_baseline_records,,,
+AREN0532-PATPUC,AREN0532,no_post_baseline_records,,,
+AREN0532-PATPUZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATPXK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATRAT,AREN0532,no_post_baseline_records,,,
+AREN0532-PATRFH,AREN0532,no_post_baseline_records,,,
+AREN0532-PATRJW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATSCK,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #2,
+AREN0532-PATSFU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATSKW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATSVG,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTBM,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTCL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTDX,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTED,AREN0532,renal_segmentation_other_modality_or_visit,ct_at_later_visit_only,Post-Chemotherapy #2,
+AREN0532-PATTEM,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTFR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTGM,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTGX,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTHF,AREN0532,no_post_baseline_records,,,
+AREN0532-PATTMF,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUBW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUCX,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUEK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUIR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUIW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUMU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATUWW,AREN0532,no_post_baseline_records,,,
+AREN0532-PATVFL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATVKY,AREN0532,no_post_baseline_records,,,
+AREN0532-PATVVK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATWFH,AREN0532,no_post_baseline_records,,,
+AREN0532-PATWJR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATWMR,AREN0532,no_post_baseline_records,,,
+AREN0532-PATWUB,AREN0532,no_post_baseline_records,,,
+AREN0532-PATXLZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATXXL,AREN0532,no_post_baseline_records,,,
+AREN0532-PATYFE,AREN0532,renal_segmentation_other_modality_or_visit,ct_at_later_visit_only,Post-Chemotherapy #3,LUNG
+AREN0532-PATYGU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATYJG,AREN0532,no_post_baseline_records,,,
+AREN0532-PATYWN,AREN0532,no_post_baseline_records,,,
+AREN0532-PATYXX,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZFK,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZFU,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZKV,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZKZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZNZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZSC,AREN0532,no_post_baseline_records,,,
+AREN0532-PATZYI,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUALB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUAUB,AREN0532,renal_segmentation_other_modality_or_visit,ct_at_later_visit_only,Post-Chemotherapy #2,
+AREN0532-PAUAUZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUAVF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUAWW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUBAV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUBDJ,AREN0532,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #3,PERITONEUM
+AREN0532-PAUBNI,AREN0532,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #3,LUNG
+AREN0532-PAUBSB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUCNW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUCRH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUCZV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUDGK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUDMC,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUDRT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUDYF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUEBF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUEFZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUEIY,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUEMD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUEZD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUFEB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUFIZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUFNJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUFPY,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PAUFRX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUFSG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGAK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGCS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGGB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGLS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGMM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGMT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGRJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGUL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUGVG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHCG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHLF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHNR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHNW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHPE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHXJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHZA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUHZD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUIDG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUIDT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUIHK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUIKE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUINP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUIRY,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUJAV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUJGM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUJIG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUJLT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUJPE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKBH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKFF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKGM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKRG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKSX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUKXR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAULBT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAULVK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAULVX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMBM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMFA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMGB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMGF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMIE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUMNW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNGC,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNHB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNLI,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNTV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNUW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUNYZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPGE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPGF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPGY,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPNM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPNU,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUPPF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURAE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURCA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURDR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURJV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURSK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAURYX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUSJH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUSRD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUTPD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUTTL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUUJR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUUMA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUUZS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUVNF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUVNT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUWHA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUWJB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUWMP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUWPZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUWVV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUXCU,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUXFR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUXHZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUXPL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUYHG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUYVM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUYWE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUYWU,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUZAD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUZMI,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUZNY,AREN0532,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0532-PAUZPW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAUZUI,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAEZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVASY,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAUH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAUX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAWB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAWZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVAYN,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBGX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBJK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBSG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBSS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBWM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBXV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVBZE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVCBC,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVCFD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVCXK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVCXX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVDHS,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PAVECX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVEJE,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVESP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFJS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFKZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFSJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFSW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFSX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFUH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFVC,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFXX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVFZY,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVGBM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVGCP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVGSZ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVHJT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVIHS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVIYJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJBT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJDX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJFX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJIG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJLT,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJLV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJRN,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVJUK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVKCM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVKMP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVKUG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVKZS,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVLGL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVLIU,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVLZL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVMEU,AREN0532,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #2,LUNG
+AREN0532-PAVMIN,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVMKX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVMTM,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVMXK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVNHR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVNJP,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PAVNXB,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVPCG,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVPIV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVPMR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVPWP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVPYK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRGW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRJR,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRML,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRSP,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRXD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVRYH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSJD,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSRK,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSSL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSVA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSVX,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSWA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVSZH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVTEC,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVTHH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVTWV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVUJH,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVURJ,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVUSL,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVUWR,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0532-PAVUZW,AREN0532,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0532-PAVVHW,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVVSF,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVVTI,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVVXV,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVWAA,AREN0532,no_post_baseline_records,,,
+AREN0532-PAVWAJ,AREN0532,no_post_baseline_records,,,
+AREN0533-PARDUY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARFRF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARGRW,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,HILAR LYMPH NODE
+AREN0533-PARHJH,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARKJG,AREN0533,no_post_baseline_records,,,
+AREN0533-PARLCU,AREN0533,no_post_baseline_records,,,
+AREN0533-PARMXS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARRFJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARRXR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARSEZ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARTDS,AREN0533,no_post_baseline_records,,,
+AREN0533-PARTNN,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARUJD,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PARURC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARURT,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARVTA,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PARVTW,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PARWHN,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARWKF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PARYZW,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASAZI,AREN0533,no_post_baseline_records,,,
+AREN0533-PASBCR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASCKY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASDGC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASDNS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASFPC,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASFSE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASGJK,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASHNV,AREN0533,no_post_baseline_records,,,
+AREN0533-PASIBE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASIGX,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASIJG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASJCU,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASKCR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASKXR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASLIS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASLZC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASMXW,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASNJY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASNVJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASNXE,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASNXK,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASRTB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASSUR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASSVD,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASSYN,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASTTH,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASUJA,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASUPF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASURW,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASVHI,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PASVKM,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASVVV,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASWII,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASWVG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASXBL,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PASZPV,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATACE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATAUB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATAUP,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATAXH,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATDAX,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATDPV,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATEIS,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #2,
+AREN0533-PATENR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATEWD,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATEZI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATFDA,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATGJF,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATGKK,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATGKU,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATIML,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATJMC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATJPR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATKKC,AREN0533,no_post_baseline_records,,,
+AREN0533-PATLED,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATLTK,AREN0533,no_post_baseline_records,,,
+AREN0533-PATLVS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATMJD,AREN0533,no_post_baseline_records,,,
+AREN0533-PATMMK,AREN0533,no_post_baseline_records,,,
+AREN0533-PATMNV,AREN0533,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #1,LUNG
+AREN0533-PATMWU,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATNRX,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATNSI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,AXILARY LYMPH NODE;AXILLARY LYMPH NODE
+AREN0533-PATNUA,AREN0533,no_post_baseline_records,,,
+AREN0533-PATPFY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATPLA,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATPRB,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATRAE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATSHR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATSIC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATTDL,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATTFM,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATTGT,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATULN,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATUUX,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATUVJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATUYV,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATVZY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATWNV,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATWYE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATYIE,AREN0533,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #1;Post-Chemotherapy #2,LUNG
+AREN0533-PATZNK,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PATZNT,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PATZUB,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUAGM,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUAJJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUCDK,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUCII,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUCIJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUCMF,AREN0533,no_post_baseline_records,,,
+AREN0533-PAUCND,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUCVZ,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUDAG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUDMI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUEKF,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUEPT,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUEZM,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUFGL,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUFNR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUFRB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUGHI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUGJE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUHZV,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUJCB,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUJFS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUKAJ,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUKAR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUKEE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUKNA,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULBB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULEJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULHG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULUH,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULWS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAULZI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUMEK,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUMPA,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUNFI,AREN0533,no_post_baseline_records,,,
+AREN0533-PAUNMH,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUNTT,AREN0533,no_post_baseline_records,,,
+AREN0533-PAUNWD,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUPEF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUPGG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAURAR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAURYB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUSAF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUSUJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUTCP,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUTFI,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUURR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUVDS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1;Post-Chemotherapy #2,LUNG
+AREN0533-PAUVII,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUVLF,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUVNR,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUVRC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUWFX,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUWKZ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUWPM,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUWXT,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUXWB,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUXWC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUZHS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAUZPZ,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAUZZN,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVADJ,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVAFK,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAVAHG,AREN0533,no_post_baseline_records,,,
+AREN0533-PAVAVM,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVBBW,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAVBGN,AREN0533,no_post_baseline_records,,,
+AREN0533-PAVCRA,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAVDGI,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVDHP,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVDKC,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVDYW,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVERS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVFDM,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0533-PAVFER,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVFLM,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVFNS,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVFSY,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVGSE,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVHYR,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVHZU,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVIFG,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVIVB,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,HILUM;LUNG
+AREN0533-PAVJBN,AREN0533,post_baseline_without_renal_segmentation,nonrenal_segmentation_only,Post-Chemotherapy #1,LUNG
+AREN0533-PAVJZN,AREN0533,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1,
+AREN0534-PASYVF,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PATELY,AREN0534,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,RETROPERITONEAL LYMPH NODE
+AREN0534-PATLIV,AREN0534,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #3;Post-Chemotherapy #4,
+AREN0534-PATUEM,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #4,RETROPERITONEAL LYMPH NODE
+AREN0534-PATYBA,AREN0534,post_baseline_without_renal_segmentation,negative_and_nonrenal,Post-Chemotherapy #3;Post-Chemotherapy #4;Post-Chemotherapy #5,ABDOMEN
+AREN0534-PATZRI,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUANN,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUBUS,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAUCXS,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAUCZL,AREN0534,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAUEBT,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUFAX,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUGNA,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1,
+AREN0534-PAUJRT,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,LUNG
+AREN0534-PAUMMS,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUTUC,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUVRH,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUWTX,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUWWA,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAUYKP,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVAYP,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAVCHN,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVEDX,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVGLK,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVJKH,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1,
+AREN0534-PAVKDV,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3;Post-Chemotherapy #4,LUNG
+AREN0534-PAVLNY,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVMYW,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAVSZI,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3;Post-Chemotherapy #4,
+AREN0534-PAVUGZ,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVVAR,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAVVAU,AREN0534,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1;Post-Chemotherapy #2,
+AREN0534-PAVVFE,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3;Post-Chemotherapy #4,
+AREN0534-PAWCIC,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAWDIE,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_later_visit_only,Post-Chemotherapy #2;Post-Chemotherapy #3;Post-Chemotherapy #4,
+AREN0534-PAWELC,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1,
+AREN0534-PAWFCM,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAWFPA,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1,
+AREN0534-PAWHBT,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAWHWY,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2,RETROPERITONEAL LYMPH NODE
+AREN0534-PAWITR,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
+AREN0534-PAWKTV,AREN0534,renal_segmentation_other_modality_or_visit,mri_at_followup1,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3;Post-Chemotherapy #4,
+AREN0534-PAWMSC,AREN0534,post_baseline_without_renal_segmentation,negative_assessment_only,Post-Chemotherapy #1;Post-Chemotherapy #2;Post-Chemotherapy #3,
