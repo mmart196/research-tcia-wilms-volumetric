@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests": 5,
+  "valid_omitted_numeric_suffix_allowed": true,
+  "rejected": [
+    "unknown_side",
+    "contradictory_side",
+    "contradictory_numeric_suffix",
+    "nonrenal_anatomy"
+  ]
+}

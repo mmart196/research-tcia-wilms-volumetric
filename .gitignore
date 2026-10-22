@@ -1,6 +1,7 @@
 *.dcm
 data/rtstruct/
 __pycache__/
+.venv/
 draft/*.docx
 draft/manuscript_blinded.md
 code/explore_*.py

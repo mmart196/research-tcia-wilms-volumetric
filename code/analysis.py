@@ -277,4 +277,25 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import subprocess
+    import sys
+    import shutil
+    if "--legacy" in sys.argv:
+        sys.argv.remove("--legacy")
+        main()
+    else:
+        base = Path(__file__).resolve().parents[1]
+        commands = [
+            [sys.executable, str(base / "code/analyze_revision.py"), *sys.argv[1:]],
+        ]
+        for command in commands:
+            subprocess.run(command, check=True)
+        if "--prepare-verification" not in sys.argv:
+            # Explicit custom output directories should use the documented separate commands.
+            out = base / "data/revision/output"
+            if "--output-dir" in sys.argv:
+                out = Path(sys.argv[sys.argv.index("--output-dir") + 1])
+            subprocess.run([sys.executable, str(base / "code/geometry_sensitivity.py"),
+                "--output-dir", str(out), "--geometry", str(base / "data/revision/source/geometry_validation.csv")], check=True)
+            if out.resolve() == (base / "data/revision/output").resolve():
+                shutil.copy2(out / "results.json", base / "data/results.json")

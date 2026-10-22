@@ -1,0 +1,1262 @@
+{
+  "purpose": "Supporting arithmetic sensitivity; no replacement of archive-reported endpoints.",
+  "denominator": "All source-verified intended ROIs supplied to this diagnostic; final-cohort subset is a separate join.",
+  "input_verified_rows": 1128,
+  "usable_geometry_rows": 776,
+  "eligible_roi_n": 1128,
+  "computed_roi_n": 776,
+  "qc_flag_counts": {
+    "usable": 776,
+    "invalid_polygon": 325,
+    "single_slice": 11,
+    "irregular_plane_spacing": 11,
+    "overlapping_or_nested_closed_planar": 5
+  },
+  "unique_patients": 326,
+  "greater_than_20_percent_rows": [
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20227186626780.4",
+      "metadata_tracking_uid": "2.25.291577094830161540514269455391673771570",
+      "canonical_patient_id": "AREN0532-PATTED",
+      "raw_timepoint": "Post-Chemotherapy #2",
+      "raw_roi_volume_ml": "0.474200",
+      "contour_volume_ml": 0.830690720855852,
+      "absolute_difference_pct": 75.177292462221
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202262764355409.4",
+      "metadata_tracking_uid": "2.25.327951939207969252403086737523238079231",
+      "canonical_patient_id": "AREN0532-PATTED",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.335815",
+      "contour_volume_ml": 1.6454721859717043,
+      "absolute_difference_pct": 29.55468708045354
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022627132340550.4",
+      "metadata_tracking_uid": "2.25.297014692308121848931466124619437689544",
+      "canonical_patient_id": "AREN0532-PATYFE",
+      "raw_timepoint": "Post-Chemotherapy #3",
+      "raw_roi_volume_ml": "0.251087",
+      "contour_volume_ml": 0.09925789609936823,
+      "absolute_difference_pct": 60.468723550256186
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022627132828167.4",
+      "metadata_tracking_uid": "2.25.271579571469819745831612718133493030220",
+      "canonical_patient_id": "AREN0532-PATYFE",
+      "raw_timepoint": "Post-Chemotherapy #3",
+      "raw_roi_volume_ml": "1.122570",
+      "contour_volume_ml": 0.4798402923805343,
+      "absolute_difference_pct": 57.255200799902525
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202241373236117.4",
+      "metadata_tracking_uid": "2.25.299596327414104324869615978826705344178",
+      "canonical_patient_id": "AREN0533-PARMKA",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.406619",
+      "contour_volume_ml": 0.089420730367446,
+      "absolute_difference_pct": 78.00871814464007
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202232745739387.4",
+      "metadata_tracking_uid": "2.25.299596327414104324869615978826705344178",
+      "canonical_patient_id": "AREN0533-PARMKA",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.359300",
+      "contour_volume_ml": 0.5113513833237199,
+      "absolute_difference_pct": 62.381270998034296
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202241394144561.4",
+      "metadata_tracking_uid": "2.25.192610552572220244511765227059632338465",
+      "canonical_patient_id": "AREN0533-PARUTG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.130084",
+      "contour_volume_ml": 0.16202154010079736,
+      "absolute_difference_pct": 24.551474509391895
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022413942460.4",
+      "metadata_tracking_uid": "2.25.37507002677074161780674285507835633089",
+      "canonical_patient_id": "AREN0533-PARUTG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.201325",
+      "contour_volume_ml": 0.06091845874499593,
+      "absolute_difference_pct": 69.74123494598489
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202232512241376.4",
+      "metadata_tracking_uid": "2.25.37507002677074161780674285507835633089",
+      "canonical_patient_id": "AREN0533-PARUTG",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.910781",
+      "contour_volume_ml": 0.7027917906977181,
+      "absolute_difference_pct": 22.83635795018581
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202253043017117.4",
+      "metadata_tracking_uid": "2.25.94416533944258278996247686237990245411",
+      "canonical_patient_id": "AREN0534-PAPYAR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "3.144124",
+      "contour_volume_ml": 2.5116104965467767,
+      "absolute_difference_pct": 20.117320546302352
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202262710568997.4",
+      "metadata_tracking_uid": "2.25.164427864263871458189507151328168216728",
+      "canonical_patient_id": "AREN0532-PATYIY",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.257179",
+      "contour_volume_ml": 0.4839294508442363,
+      "absolute_difference_pct": 88.16833833409271
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022789125243.4",
+      "metadata_tracking_uid": "2.25.300431577646439434168226007478586189770",
+      "canonical_patient_id": "AREN0532-PAVETN",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "44.122036",
+      "contour_volume_ml": 60.475125419841085,
+      "absolute_difference_pct": 37.063315527508934
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022325114141984",
+      "metadata_tracking_uid": "2.25.83674495332760485903988206203538193378",
+      "canonical_patient_id": "AREN0533-PASKEI",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "13.727066",
+      "contour_volume_ml": 32.684135551950924,
+      "absolute_difference_pct": 138.09993739340163
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20224552117537.4",
+      "metadata_tracking_uid": "2.25.269238641280249071134902586353498033755",
+      "canonical_patient_id": "AREN0533-PAUMZR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "17.603974",
+      "contour_volume_ml": 21.82382878339568,
+      "absolute_difference_pct": 23.97103508216769
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225292853112.4",
+      "metadata_tracking_uid": "2.25.94334526513489765345960726698649231380",
+      "canonical_patient_id": "AREN0534-PASXDI",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.122680",
+      "contour_volume_ml": 1.6740139889373535,
+      "absolute_difference_pct": 21.136771018836868
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225292035810.4",
+      "metadata_tracking_uid": "2.25.94334526513489765345960726698649231380",
+      "canonical_patient_id": "AREN0534-PASXDI",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "18.432343",
+      "contour_volume_ml": 28.3078994844844,
+      "absolute_difference_pct": 53.57732592370053
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225292250759.4",
+      "metadata_tracking_uid": "2.25.312680253052342414535832695493666827497",
+      "canonical_patient_id": "AREN0534-PASXDI",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "5.250458",
+      "contour_volume_ml": 3.3616604345475203,
+      "absolute_difference_pct": 35.97395818521888
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022595259260",
+      "metadata_tracking_uid": "2.25.5915168333742378870276017296790993292",
+      "canonical_patient_id": "AREN0534-PATGKX",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.096261",
+      "contour_volume_ml": 0.024901525637319795,
+      "absolute_difference_pct": 74.13124148168022
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225864116714.4",
+      "metadata_tracking_uid": "2.25.153998598885617739663441064310641757623",
+      "canonical_patient_id": "AREN0534-PATJYN",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.062561",
+      "contour_volume_ml": 0.03911355501257883,
+      "absolute_difference_pct": 37.479332151693825
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225955628713.4",
+      "metadata_tracking_uid": "2.25.80365102012539886378494946897828542097",
+      "canonical_patient_id": "AREN0534-PATLYF",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.148350",
+      "contour_volume_ml": 0.20954232208833742,
+      "absolute_difference_pct": 41.248616170096
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202262594848395.4",
+      "metadata_tracking_uid": "2.25.151607271463315244334140138373753398178",
+      "canonical_patient_id": "AREN0534-PATMFX",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.400824",
+      "contour_volume_ml": 1.1042529106017946,
+      "absolute_difference_pct": 54.00525358786006
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225145255138.4",
+      "metadata_tracking_uid": "2.25.109504570246701110273318099566056882320",
+      "canonical_patient_id": "AREN0534-PATMTF",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.202650",
+      "contour_volume_ml": 0.2569088911133571,
+      "absolute_difference_pct": 26.774681032991403
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225610724766.4",
+      "metadata_tracking_uid": "2.25.109504570246701110273318099566056882320",
+      "canonical_patient_id": "AREN0534-PATMTF",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.838934",
+      "contour_volume_ml": 2.663834778147368,
+      "absolute_difference_pct": 44.857552155072874
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022579275019.4",
+      "metadata_tracking_uid": "2.25.211725652536647141021700751911196831376",
+      "canonical_patient_id": "AREN0534-PATTBR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "6.177827",
+      "contour_volume_ml": 9.483357433706196,
+      "absolute_difference_pct": 53.50636127729373
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022689922380",
+      "metadata_tracking_uid": "2.25.151118105485568144554199696740508602211",
+      "canonical_patient_id": "AREN0534-PATVFZ",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.542414",
+      "contour_volume_ml": 0.6790249409061245,
+      "absolute_difference_pct": 25.185732836196077
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225964642606.4",
+      "metadata_tracking_uid": "2.25.258605728479956357487597141941684618940",
+      "canonical_patient_id": "AREN0534-PATYLM",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "22.979646",
+      "contour_volume_ml": 27.708809656721893,
+      "absolute_difference_pct": 20.579793338513113
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225965241789.4",
+      "metadata_tracking_uid": "2.25.149970685490099846115831923870821812612",
+      "canonical_patient_id": "AREN0534-PATYLM",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "37.551278",
+      "contour_volume_ml": 45.99475113393273,
+      "absolute_difference_pct": 22.485181819731213
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202259101354926.4",
+      "metadata_tracking_uid": "2.25.307299561652639593220713762767194631325",
+      "canonical_patient_id": "AREN0534-PAUBDU",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "7.779293",
+      "contour_volume_ml": 9.642120331054539,
+      "absolute_difference_pct": 23.94597209610872
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202268115217159.4",
+      "metadata_tracking_uid": "2.25.134384255492104127966039924381224488033",
+      "canonical_patient_id": "AREN0534-PAUCET",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.925060",
+      "contour_volume_ml": 1.291379137794172,
+      "absolute_difference_pct": 39.59950033448337
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202268121455343.4",
+      "metadata_tracking_uid": "2.25.162481807372145426495245281019666507159",
+      "canonical_patient_id": "AREN0534-PAUCWN",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.475375",
+      "contour_volume_ml": 0.2783094496371275,
+      "absolute_difference_pct": 41.45475684730423
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202268121011919.4",
+      "metadata_tracking_uid": "2.25.162481807372145426495245281019666507159",
+      "canonical_patient_id": "AREN0534-PAUCWN",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.561075",
+      "contour_volume_ml": 0.34296050077286067,
+      "absolute_difference_pct": 38.87439276872777
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225108373706",
+      "metadata_tracking_uid": "2.25.219832648763138281240475700795319424102",
+      "canonical_patient_id": "AREN0534-PAUDGS",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "4.286725",
+      "contour_volume_ml": 5.746582160369023,
+      "absolute_difference_pct": 34.05530236646912
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252882459851.4",
+      "metadata_tracking_uid": "2.25.116086636129746663302483853915271645132",
+      "canonical_patient_id": "AREN0534-PAUDNH",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.529474",
+      "contour_volume_ml": 1.1976301328796322,
+      "absolute_difference_pct": 21.696600734655693
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202268125429229.4",
+      "metadata_tracking_uid": "2.25.250049180189033713273385055791391708015",
+      "canonical_patient_id": "AREN0534-PAUFAR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.335350",
+      "contour_volume_ml": 0.4487295964570996,
+      "absolute_difference_pct": 33.80933247565219
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226812551804.4",
+      "metadata_tracking_uid": "2.25.171494081850234785132337052353294206824",
+      "canonical_patient_id": "AREN0534-PAUFAR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.019229",
+      "contour_volume_ml": 0.03007483773524141,
+      "absolute_difference_pct": 56.40354534942748
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022528102953166.4",
+      "metadata_tracking_uid": "2.25.28655655966545921179363436428473592701",
+      "canonical_patient_id": "AREN0534-PAUFAX",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.121285",
+      "contour_volume_ml": 0.8912697150412848,
+      "absolute_difference_pct": 20.513543386268008
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226884557978.4",
+      "metadata_tracking_uid": "2.25.73363464997200951798680445050368519358",
+      "canonical_patient_id": "AREN0534-PAUFVB",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.161081",
+      "contour_volume_ml": 0.03526357881305586,
+      "absolute_difference_pct": 78.10816991882602
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252810514792",
+      "metadata_tracking_uid": "2.25.73363464997200951798680445050368519358",
+      "canonical_patient_id": "AREN0534-PAUFVB",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "3.596209",
+      "contour_volume_ml": 2.6762359724701184,
+      "absolute_difference_pct": 25.58174531930379
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202268133339436.4",
+      "metadata_tracking_uid": "2.25.230463222042550391694398951681984707382",
+      "canonical_patient_id": "AREN0534-PAUGMF",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "28.321171",
+      "contour_volume_ml": 21.927474182285238,
+      "absolute_difference_pct": 22.5756795780611
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022513133014290.4",
+      "metadata_tracking_uid": "2.25.325000158639937032352520393987354360049",
+      "canonical_patient_id": "AREN0534-PAUIKJ",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.175087",
+      "contour_volume_ml": 3.2316999362355507,
+      "absolute_difference_pct": 48.57796199579837
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202253083059536.4",
+      "metadata_tracking_uid": "2.25.49154328853538920400349504703948050374",
+      "canonical_patient_id": "AREN0534-PAUJRT",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.073845",
+      "contour_volume_ml": 0.6545440518378315,
+      "absolute_difference_pct": 39.046691856102925
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202251313038443.4",
+      "metadata_tracking_uid": "2.25.30718192427300616295540297783081225510",
+      "canonical_patient_id": "AREN0534-PAUKGG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.513460",
+      "contour_volume_ml": 0.3514953488567928,
+      "absolute_difference_pct": 31.543771889379354
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225147306366.4",
+      "metadata_tracking_uid": "2.25.114373454858861684833696844183348596759",
+      "canonical_patient_id": "AREN0534-PAULPD",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.198452",
+      "contour_volume_ml": 0.36902980117720713,
+      "absolute_difference_pct": 85.95418598815188
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202251465622130",
+      "metadata_tracking_uid": "2.25.114373454858861684833696844183348596759",
+      "canonical_patient_id": "AREN0534-PAULPD",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.583409",
+      "contour_volume_ml": 2.5077627127395847,
+      "absolute_difference_pct": 58.37744466146047
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252273051429.4",
+      "metadata_tracking_uid": "2.25.161160198352444260431642127598401117610",
+      "canonical_patient_id": "AREN0534-PAUTUC",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.887317",
+      "contour_volume_ml": 3.157475031747309,
+      "absolute_difference_pct": 67.29966570254541
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252271645952",
+      "metadata_tracking_uid": "2.25.161160198352444260431642127598401117610",
+      "canonical_patient_id": "AREN0534-PAUTUC",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.349932",
+      "contour_volume_ml": 4.057788672477531,
+      "absolute_difference_pct": 72.67685501016757
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252285316678.4",
+      "metadata_tracking_uid": "2.25.23945108603887277192115204437093703327",
+      "canonical_patient_id": "AREN0534-PAUTVH",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "9.848137",
+      "contour_volume_ml": 15.485810388763392,
+      "absolute_difference_pct": 57.246090187041396
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225228451349.4",
+      "metadata_tracking_uid": "2.25.23945108603887277192115204437093703327",
+      "canonical_patient_id": "AREN0534-PAUTVH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "8.853930",
+      "contour_volume_ml": 13.487526074608787,
+      "absolute_difference_pct": 52.33377804668421
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022522122743881.4",
+      "metadata_tracking_uid": "2.25.43971477358146575252516613840410630189",
+      "canonical_patient_id": "AREN0534-PAUVRH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "17.027595",
+      "contour_volume_ml": 22.005238906303056,
+      "absolute_difference_pct": 29.2328065490344
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252213030661.4",
+      "metadata_tracking_uid": "2.25.294737351718763878591520063454813724945",
+      "canonical_patient_id": "AREN0534-PAUVWM",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "3.701381",
+      "contour_volume_ml": 5.289102768171545,
+      "absolute_difference_pct": 42.8953887257633
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252212420597",
+      "metadata_tracking_uid": "2.25.294737351718763878591520063454813724945",
+      "canonical_patient_id": "AREN0534-PAUVWM",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "4.592037",
+      "contour_volume_ml": 6.182285072586008,
+      "absolute_difference_pct": 34.630558782213804
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252351912263",
+      "metadata_tracking_uid": "2.25.178528921152334536342515225613200707896",
+      "canonical_patient_id": "AREN0534-PAUWIW",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.714022",
+      "contour_volume_ml": 1.7379942562951591,
+      "absolute_difference_pct": 35.96241090546948
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252345050683",
+      "metadata_tracking_uid": "2.25.178528921152334536342515225613200707896",
+      "canonical_patient_id": "AREN0534-PAUWIW",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "15.150617",
+      "contour_volume_ml": 10.831941954632104,
+      "absolute_difference_pct": 28.50494501555875
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022523530252.4",
+      "metadata_tracking_uid": "2.25.178967875578562401894987466799660641368",
+      "canonical_patient_id": "AREN0534-PAUWJI",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "28.332765",
+      "contour_volume_ml": 34.049732070863804,
+      "absolute_difference_pct": 20.17793558399191
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252363247384.4",
+      "metadata_tracking_uid": "2.25.129957597147266244346693233292657583146",
+      "canonical_patient_id": "AREN0534-PAUWTD",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "5.075838",
+      "contour_volume_ml": 10.924171736044801,
+      "absolute_difference_pct": 115.21907783591205
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252392634212.4",
+      "metadata_tracking_uid": "2.25.222621162298014110448113494716063635126",
+      "canonical_patient_id": "AREN0534-PAUWTX",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.098200",
+      "contour_volume_ml": 0.8371029739353038,
+      "absolute_difference_pct": 23.77499782049684
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252392142438.4",
+      "metadata_tracking_uid": "2.25.222621162298014110448113494716063635126",
+      "canonical_patient_id": "AREN0534-PAUWTX",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.605077",
+      "contour_volume_ml": 2.986333846138781,
+      "absolute_difference_pct": 86.05548806311354
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252382043652.4",
+      "metadata_tracking_uid": "2.25.301162087320665232319641965694384750333",
+      "canonical_patient_id": "AREN0534-PAUWWA",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "10.610176",
+      "contour_volume_ml": 18.536038841232266,
+      "absolute_difference_pct": 74.70057839975762
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252382519640.4",
+      "metadata_tracking_uid": "2.25.234388752458917385631777514577604631155",
+      "canonical_patient_id": "AREN0534-PAUWWA",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.143543",
+      "contour_volume_ml": 0.42915890365652165,
+      "absolute_difference_pct": 198.97584950608646
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225296485345",
+      "metadata_tracking_uid": "2.25.197952837951005900811070962831904128568",
+      "canonical_patient_id": "AREN0534-PAUYJU",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.104046",
+      "contour_volume_ml": 0.20660910915608757,
+      "absolute_difference_pct": 98.57477380782306
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252964145805.4",
+      "metadata_tracking_uid": "2.25.197952837951005900811070962831904128568",
+      "canonical_patient_id": "AREN0534-PAUYJU",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.226253",
+      "contour_volume_ml": 0.3562248468346183,
+      "absolute_difference_pct": 57.445358441487315
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225297255962.4",
+      "metadata_tracking_uid": "2.25.241017751352559250005929794915683948312",
+      "canonical_patient_id": "AREN0534-PAUYXC",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "5.637267",
+      "contour_volume_ml": 6.827513785034767,
+      "absolute_difference_pct": 21.11389765705203
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022523113757120.4",
+      "metadata_tracking_uid": "2.25.39851641551722189184768786509309560162",
+      "canonical_patient_id": "AREN0534-PAVADT",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "6.510166",
+      "contour_volume_ml": 5.11598640097385,
+      "absolute_difference_pct": 21.41542318623135
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022523114059961.4",
+      "metadata_tracking_uid": "2.25.7519633233891302750895707099921915425",
+      "canonical_patient_id": "AREN0534-PAVADT",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.054560",
+      "contour_volume_ml": 0.42561833901489765,
+      "absolute_difference_pct": 680.092263590355
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022523113317409.4",
+      "metadata_tracking_uid": "2.25.7519633233891302750895707099921915425",
+      "canonical_patient_id": "AREN0534-PAVADT",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "3.676555",
+      "contour_volume_ml": 5.5929181324122,
+      "absolute_difference_pct": 52.123880437317005
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022523124918825.4",
+      "metadata_tracking_uid": "2.25.83713037544618690306251238482018793761",
+      "canonical_patient_id": "AREN0534-PAVAFM",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.518907",
+      "contour_volume_ml": 0.6460615425306383,
+      "absolute_difference_pct": 57.46536538901735
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252712541832.4",
+      "metadata_tracking_uid": "2.25.50159111887989814528656770796215297410",
+      "canonical_patient_id": "AREN0534-PAVBUK",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.320460",
+      "contour_volume_ml": 0.0967909865495495,
+      "absolute_difference_pct": 69.79623461600528
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022527122133890.4",
+      "metadata_tracking_uid": "2.25.50159111887989814528656770796215297410",
+      "canonical_patient_id": "AREN0534-PAVBUK",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.739712",
+      "contour_volume_ml": 0.8267692146290926,
+      "absolute_difference_pct": 52.476661963066725
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225276742901.4",
+      "metadata_tracking_uid": "2.25.25392333491902048056191828035095329711",
+      "canonical_patient_id": "AREN0534-PAVCHN",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.191009",
+      "contour_volume_ml": 0.5108097422103314,
+      "absolute_difference_pct": 167.42705433269185
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225275334101.4",
+      "metadata_tracking_uid": "2.25.25392333491902048056191828035095329711",
+      "canonical_patient_id": "AREN0534-PAVCHN",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.230926",
+      "contour_volume_ml": 3.0460921052037513,
+      "absolute_difference_pct": 36.5393610188662
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022527134817297",
+      "metadata_tracking_uid": "2.25.255228461672320855471951598492961718632",
+      "canonical_patient_id": "AREN0534-PAVEEP",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.786507",
+      "contour_volume_ml": 0.48943116775289863,
+      "absolute_difference_pct": 37.77154332346709
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252814143514.4",
+      "metadata_tracking_uid": "2.25.315885662518718184897992708769451555943",
+      "canonical_patient_id": "AREN0534-PAVGDF",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.125159",
+      "contour_volume_ml": 1.7369694338603074,
+      "absolute_difference_pct": 54.37546461080678
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225297528275.4",
+      "metadata_tracking_uid": "2.25.290453016318055013673648801526506900473",
+      "canonical_patient_id": "AREN0534-PAVGLK",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "4.838922",
+      "contour_volume_ml": 7.274895143529754,
+      "absolute_difference_pct": 50.341235992846215
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252993316249.4",
+      "metadata_tracking_uid": "2.25.290453016318055013673648801526506900473",
+      "canonical_patient_id": "AREN0534-PAVGLK",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "93.350715",
+      "contour_volume_ml": 122.99174087004789,
+      "absolute_difference_pct": 31.752328699408356
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022528183130838.4",
+      "metadata_tracking_uid": "2.25.262529445993964186733125496900524999417",
+      "canonical_patient_id": "AREN0534-PAVHFD",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.363895",
+      "contour_volume_ml": 3.397330593726169,
+      "absolute_difference_pct": 43.717491416757895
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022528182240939.4",
+      "metadata_tracking_uid": "2.25.257841494153219810495158088585051122240",
+      "canonical_patient_id": "AREN0534-PAVHFD",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.340851",
+      "contour_volume_ml": 0.4471121206495645,
+      "absolute_difference_pct": 31.175240984936085
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252962529325.4",
+      "metadata_tracking_uid": "2.25.308440310461815132000935346184973286546",
+      "canonical_patient_id": "AREN0534-PAVIFY",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.847390",
+      "contour_volume_ml": 3.7270322319810183,
+      "absolute_difference_pct": 30.892931139781293
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225296335677.4",
+      "metadata_tracking_uid": "2.25.25683404346795358570496571424481091183",
+      "canonical_patient_id": "AREN0534-PAVJCL",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.435843",
+      "contour_volume_ml": 0.6674498744938332,
+      "absolute_difference_pct": 53.13997804113711
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252951928301.4",
+      "metadata_tracking_uid": "2.25.25683404346795358570496571424481091183",
+      "canonical_patient_id": "AREN0534-PAVJCL",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.260060",
+      "contour_volume_ml": 2.7123606594591325,
+      "absolute_difference_pct": 20.012772203354437
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252993057643.4",
+      "metadata_tracking_uid": "2.25.190805617192757008320981018236579350222",
+      "canonical_patient_id": "AREN0534-PAVJDT",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "10.508658",
+      "contour_volume_ml": 8.108899776504568,
+      "absolute_difference_pct": 22.836010302128322
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022529102444697.4",
+      "metadata_tracking_uid": "2.25.267586252584043513854921491026713100048",
+      "canonical_patient_id": "AREN0534-PAVJKH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "35.139844",
+      "contour_volume_ml": 45.223780700621035,
+      "absolute_difference_pct": 28.696589263802764
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202253073921172",
+      "metadata_tracking_uid": "2.25.261035656335053651294361451494948735512",
+      "canonical_patient_id": "AREN0534-PAVLNY",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.554795",
+      "contour_volume_ml": 2.5046650058543936,
+      "absolute_difference_pct": 61.09294188972782
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022530852144.4",
+      "metadata_tracking_uid": "2.25.222093856310568634803931697412522795166",
+      "canonical_patient_id": "AREN0534-PAVLNY",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.430371",
+      "contour_volume_ml": 0.9524967067852806,
+      "absolute_difference_pct": 121.31990928414801
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252994756411.4",
+      "metadata_tracking_uid": "2.25.124175315044644589333906504916061897632",
+      "canonical_patient_id": "AREN0534-PAVLZR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.138236",
+      "contour_volume_ml": 0.423543881224503,
+      "absolute_difference_pct": 206.39188143790548
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225299374923.4",
+      "metadata_tracking_uid": "2.25.124175315044644589333906504916061897632",
+      "canonical_patient_id": "AREN0534-PAVLZR",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.397535",
+      "contour_volume_ml": 2.9506264315049022,
+      "absolute_difference_pct": 23.069170273005493
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202253042616142.4",
+      "metadata_tracking_uid": "2.25.259335145761734519815905246214310817151",
+      "canonical_patient_id": "AREN0534-PAVMXP",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.341507",
+      "contour_volume_ml": 0.6340023484952233,
+      "absolute_difference_pct": 85.64841965032146
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202252914249704",
+      "metadata_tracking_uid": "2.25.259335145761734519815905246214310817151",
+      "canonical_patient_id": "AREN0534-PAVMXP",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "3.166503",
+      "contour_volume_ml": 5.525938250561939,
+      "absolute_difference_pct": 74.51233270778329
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20225306301564",
+      "metadata_tracking_uid": "2.25.71471372758021861439548642858878725666",
+      "canonical_patient_id": "AREN0534-PAVPES",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.137697",
+      "contour_volume_ml": 0.38785913205591027,
+      "absolute_difference_pct": 181.6758041612455
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022530143613558.4",
+      "metadata_tracking_uid": "2.25.53977492956537347526566587469697665775",
+      "canonical_patient_id": "AREN0534-PAVSGD",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "6.247149",
+      "contour_volume_ml": 8.647962983019353,
+      "absolute_difference_pct": 38.430554209918036
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202253095314645.4",
+      "metadata_tracking_uid": "2.25.257879862328437348482976304890889739533",
+      "canonical_patient_id": "AREN0534-PAVSKE",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.076660",
+      "contour_volume_ml": 0.47438991303079203,
+      "absolute_difference_pct": 518.823262497772
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022530121559593.4",
+      "metadata_tracking_uid": "2.25.115630986741082095639065616809421649330",
+      "canonical_patient_id": "AREN0534-PAVSSD",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.015269",
+      "contour_volume_ml": 0.06724588615767521,
+      "absolute_difference_pct": 340.40792558566517
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202261463521883.4",
+      "metadata_tracking_uid": "2.25.269619204613338326442775265109466644242",
+      "canonical_patient_id": "AREN0534-PAVSSD",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.330082",
+      "contour_volume_ml": 0.906089422263838,
+      "absolute_difference_pct": 31.877175823457645
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022530121322934.4",
+      "metadata_tracking_uid": "2.25.88388151573007593227672599341016285687",
+      "canonical_patient_id": "AREN0534-PAVSSD",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.552184",
+      "contour_volume_ml": 3.250518675115245,
+      "absolute_difference_pct": 27.362238581357968
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022617727946",
+      "metadata_tracking_uid": "2.25.123422977380462288980551996958836737255",
+      "canonical_patient_id": "AREN0534-PAVSZV",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "16.059120",
+      "contour_volume_ml": 12.358588143372613,
+      "absolute_difference_pct": 23.043179555463734
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226113199697",
+      "metadata_tracking_uid": "2.25.204080136302873502605304066107980002276",
+      "canonical_patient_id": "AREN0534-PAVTCI",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "8.099003",
+      "contour_volume_ml": 10.093143487470519,
+      "absolute_difference_pct": 24.622049003692414
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022611331672.4",
+      "metadata_tracking_uid": "2.25.204080136302873502605304066107980002276",
+      "canonical_patient_id": "AREN0534-PAVTCI",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "21.520096",
+      "contour_volume_ml": 26.482026795699266,
+      "absolute_difference_pct": 23.057196379139143
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226171549787.4",
+      "metadata_tracking_uid": "2.25.27598584423591978399715123746667575918",
+      "canonical_patient_id": "AREN0534-PAVUMH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "3.451212",
+      "contour_volume_ml": 2.440382396398072,
+      "absolute_difference_pct": 29.28911940506488
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022618113229597.4",
+      "metadata_tracking_uid": "2.25.170264750028579170563250378941892665018",
+      "canonical_patient_id": "AREN0534-PAVVAR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.845117",
+      "contour_volume_ml": 0.5111773979103926,
+      "absolute_difference_pct": 39.51400836684238
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226172744677.4",
+      "metadata_tracking_uid": "2.25.170264750028579170563250378941892665018",
+      "canonical_patient_id": "AREN0534-PAVVAR",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "1.170282",
+      "contour_volume_ml": 0.5076955682877375,
+      "absolute_difference_pct": 56.61767263892485
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226172829196.4",
+      "metadata_tracking_uid": "2.25.170264750028579170563250378941892665018",
+      "canonical_patient_id": "AREN0534-PAVVAR",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.832636",
+      "contour_volume_ml": 0.4958894874339277,
+      "absolute_difference_pct": 40.44342456560518
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226110644997.4",
+      "metadata_tracking_uid": "2.25.309428618468557217995733020292015086483",
+      "canonical_patient_id": "AREN0534-PAVVFE",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.729265",
+      "contour_volume_ml": 1.0911337363574602,
+      "absolute_difference_pct": 36.901878176134936
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226110535516.4",
+      "metadata_tracking_uid": "2.25.240475898021929788176494134148284470012",
+      "canonical_patient_id": "AREN0534-PAVVFE",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "15.890563",
+      "contour_volume_ml": 19.287174996897313,
+      "absolute_difference_pct": 21.375026151668216
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202261121451323",
+      "metadata_tracking_uid": "2.25.79630443134254037788405841407826561831",
+      "canonical_patient_id": "AREN0534-PAVVPE",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "10.390222",
+      "contour_volume_ml": 13.369679428258088,
+      "absolute_difference_pct": 28.67558968670822
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022644461615.4",
+      "metadata_tracking_uid": "2.25.321273118768210891837948468026408986843",
+      "canonical_patient_id": "AREN0534-PAVXSY",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.249723",
+      "contour_volume_ml": 1.5138887385034105,
+      "absolute_difference_pct": 32.70777164551322
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022643501011.4",
+      "metadata_tracking_uid": "2.25.321273118768210891837948468026408986843",
+      "canonical_patient_id": "AREN0534-PAVXSY",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.814695",
+      "contour_volume_ml": 2.013773166903163,
+      "absolute_difference_pct": 147.18123554252364
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022656267137.4",
+      "metadata_tracking_uid": "2.25.335259805109846217619616712016115176285",
+      "canonical_patient_id": "AREN0534-PAVYTT",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "3.609395",
+      "contour_volume_ml": 4.562486028247956,
+      "absolute_difference_pct": 26.405838880143502
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202264104816338.4",
+      "metadata_tracking_uid": "2.25.196368514455919132438601052102416767420",
+      "canonical_patient_id": "AREN0534-PAWACA",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "38.669656",
+      "contour_volume_ml": 47.065300033788446,
+      "absolute_difference_pct": 21.71119400128215
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226410523386.4",
+      "metadata_tracking_uid": "2.25.146993087730102716517691567190504276626",
+      "canonical_patient_id": "AREN0534-PAWACA",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.470067",
+      "contour_volume_ml": 2.8796149589227613,
+      "absolute_difference_pct": 95.88324606448286
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202264103118104.4",
+      "metadata_tracking_uid": "2.25.146993087730102716517691567190504276626",
+      "canonical_patient_id": "AREN0534-PAWACA",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "7.038362",
+      "contour_volume_ml": 14.184664228275478,
+      "absolute_difference_pct": 101.53359870202011
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202264111555230.4",
+      "metadata_tracking_uid": "2.25.21745036273910702848363131834552051812",
+      "canonical_patient_id": "AREN0534-PAWAHG",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "3.856195",
+      "contour_volume_ml": 4.722966017937526,
+      "absolute_difference_pct": 22.477364810066028
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202261811739150.4",
+      "metadata_tracking_uid": "2.25.330310131290510309835361673361280181078",
+      "canonical_patient_id": "AREN0534-PAWBKD",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.300738",
+      "contour_volume_ml": 0.2129602994474647,
+      "absolute_difference_pct": 29.187432433724805
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226615335734.4",
+      "metadata_tracking_uid": "2.25.269455978115330453283593492384450932212",
+      "canonical_patient_id": "AREN0534-PAWBVU",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "3.889566",
+      "contour_volume_ml": 2.5611353021765906,
+      "absolute_difference_pct": 34.153699868402015
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022657446206.4",
+      "metadata_tracking_uid": "2.25.323295873674240247703149700520929674578",
+      "canonical_patient_id": "AREN0534-PAWCIC",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.251860",
+      "contour_volume_ml": 1.8308947961410482,
+      "absolute_difference_pct": 46.253957802074375
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226563444234",
+      "metadata_tracking_uid": "2.25.323295873674240247703149700520929674578",
+      "canonical_patient_id": "AREN0534-PAWCIC",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "5.613180",
+      "contour_volume_ml": 7.657628804858344,
+      "absolute_difference_pct": 36.42229190687533
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226561535547.4",
+      "metadata_tracking_uid": "2.25.323295873674240247703149700520929674578",
+      "canonical_patient_id": "AREN0534-PAWCIC",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.709724",
+      "contour_volume_ml": 7.886465302000997,
+      "absolute_difference_pct": 191.0431210706698
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022658491667",
+      "metadata_tracking_uid": "2.25.238245221762927458963275470709881564172",
+      "canonical_patient_id": "AREN0534-PAWDBN",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.479815",
+      "contour_volume_ml": 4.846053497346479,
+      "absolute_difference_pct": 95.4199606561973
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226595840919.4",
+      "metadata_tracking_uid": "2.25.290622668900410449131073242632258034185",
+      "canonical_patient_id": "AREN0534-PAWDDN",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.339402",
+      "contour_volume_ml": 1.1890624872670021,
+      "absolute_difference_pct": 49.17237450993878
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022659632445.4",
+      "metadata_tracking_uid": "2.25.290622668900410449131073242632258034185",
+      "canonical_patient_id": "AREN0534-PAWDDN",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "40.795786",
+      "contour_volume_ml": 30.52653474540918,
+      "absolute_difference_pct": 25.172333374311798
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022651107243.4",
+      "metadata_tracking_uid": "2.25.246643509471261182535059336443209199985",
+      "canonical_patient_id": "AREN0534-PAWEAG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "58.883857",
+      "contour_volume_ml": 73.45308363299945,
+      "absolute_difference_pct": 24.742310329636616
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226511354213.4",
+      "metadata_tracking_uid": "2.25.52069434207488979155964309876123593746",
+      "canonical_patient_id": "AREN0534-PAWEAG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.049228",
+      "contour_volume_ml": 1.685954874963169,
+      "absolute_difference_pct": 60.68527288284042
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202265104722171.4",
+      "metadata_tracking_uid": "2.25.52069434207488979155964309876123593746",
+      "canonical_patient_id": "AREN0534-PAWEAG",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "2.091450",
+      "contour_volume_ml": 3.3419847389139563,
+      "absolute_difference_pct": 59.792715050034964
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202265131058570.4",
+      "metadata_tracking_uid": "2.25.14823708606000710551896985107221613688",
+      "canonical_patient_id": "AREN0534-PAWFCM",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.803104",
+      "contour_volume_ml": 1.4240449287500876,
+      "absolute_difference_pct": 21.022585011730463
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226512402196.4",
+      "metadata_tracking_uid": "2.25.277588715819615960050056540094130403372",
+      "canonical_patient_id": "AREN0534-PAWFCP",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.136286",
+      "contour_volume_ml": 2.0117505595767207,
+      "absolute_difference_pct": 77.04614503538025
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022669936371.4",
+      "metadata_tracking_uid": "2.25.265655396795504791084467637752677946187",
+      "canonical_patient_id": "AREN0534-PAWFPA",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "5.476361",
+      "contour_volume_ml": 7.994300626355816,
+      "absolute_difference_pct": 45.97833536459368
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.202261835011597.4",
+      "metadata_tracking_uid": "2.25.232644312397795308490669635658169862635",
+      "canonical_patient_id": "AREN0534-PAWFZH",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "2.467338",
+      "contour_volume_ml": 1.3465674188436432,
+      "absolute_difference_pct": 45.424282411098794
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226662618373.4",
+      "metadata_tracking_uid": "2.25.177713630374443216613353519404171097386",
+      "canonical_patient_id": "AREN0534-PAWFZH",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "5.575873",
+      "contour_volume_ml": 7.533894422209685,
+      "absolute_difference_pct": 35.1159616119249
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226662346319.4",
+      "metadata_tracking_uid": "2.25.177713630374443216613353519404171097386",
+      "canonical_patient_id": "AREN0534-PAWFZH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "63.054039",
+      "contour_volume_ml": 75.66796899573403,
+      "absolute_difference_pct": 20.004951618934392
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226662523412.4",
+      "metadata_tracking_uid": "2.25.190869062901195515627094818178215184023",
+      "canonical_patient_id": "AREN0534-PAWFZH",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "10.029341",
+      "contour_volume_ml": 14.918927216463404,
+      "absolute_difference_pct": 48.75281652566607
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226674058517.4",
+      "metadata_tracking_uid": "2.25.65582671269314311275252607346311439407",
+      "canonical_patient_id": "AREN0534-PAWHWW",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "8.249025",
+      "contour_volume_ml": 14.874808404999147,
+      "absolute_difference_pct": 80.32201872341456
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022669535121.4",
+      "metadata_tracking_uid": "2.25.138440241244096064184228423093236901133",
+      "canonical_patient_id": "AREN0534-PAWITR",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.007920",
+      "contour_volume_ml": 0.586622224199809,
+      "absolute_difference_pct": 41.798731625544775
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022661381667",
+      "metadata_tracking_uid": "2.25.316354124100611428960031460486833660760",
+      "canonical_patient_id": "AREN0534-PAWJRU",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "12.592150",
+      "contour_volume_ml": 17.460404247001907,
+      "absolute_difference_pct": 38.66102490044915
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022676435284.4",
+      "metadata_tracking_uid": "2.25.159921795716725663353521148852768497863",
+      "canonical_patient_id": "AREN0534-PAWKRP",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "0.280587",
+      "contour_volume_ml": 0.9803386143037508,
+      "absolute_difference_pct": 249.38846571785254
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226772828338.4",
+      "metadata_tracking_uid": "2.25.159921795716725663353521148852768497863",
+      "canonical_patient_id": "AREN0534-PAWKRP",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "5.423434",
+      "contour_volume_ml": 7.455940535092697,
+      "absolute_difference_pct": 37.47637631605173
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022687057710",
+      "metadata_tracking_uid": "2.25.336458728752366261485399228411013767457",
+      "canonical_patient_id": "AREN0534-PAWMJG",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "1.205815",
+      "contour_volume_ml": 1.659318270106413,
+      "absolute_difference_pct": 37.60968889144794
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.2022689240994.4",
+      "metadata_tracking_uid": "2.25.336458728752366261485399228411013767457",
+      "canonical_patient_id": "AREN0534-PAWMJG",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "0.808902",
+      "contour_volume_ml": 1.5577146509012945,
+      "absolute_difference_pct": 92.57149208449162
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226713519924.4",
+      "metadata_tracking_uid": "2.25.189356816096556060732805984236935772996",
+      "canonical_patient_id": "AREN0534-PAWPWX",
+      "raw_timepoint": "Post-Chemotherapy #1",
+      "raw_roi_volume_ml": "3.786074",
+      "contour_volume_ml": 2.966036834975466,
+      "absolute_difference_pct": 21.659301033855495
+    },
+    {
+      "series_uid": "1.2.826.0.1.534147.756.812677238.20226213568695.4",
+      "metadata_tracking_uid": "2.25.168556244424667464533348424963555759059",
+      "canonical_patient_id": "AREN0534-PAWRFP",
+      "raw_timepoint": "Pre-Dose",
+      "raw_roi_volume_ml": "5.403373",
+      "contour_volume_ml": 3.5009358041738428,
+      "absolute_difference_pct": 35.20832627742259
+    }
+  ],
+  "median_signed_difference_pct": 0.6855317951191324,
+  "median_absolute_difference_pct": 4.380804303483623,
+  "median_signed_relative_error_pct": 0.6855317951191324,
+  "median_absolute_relative_error_pct": 4.380804303483623,
+  "signed_difference_percentiles_2_5_97_5": [
+    -38.460824226755015,
+    86.01749978500291
+  ],
+  "n_gt_10pct": 238,
+  "n_greater_than_20_percent": 137,
+  "spearman_rho": 0.9979148781543195
+}

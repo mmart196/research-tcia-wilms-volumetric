@@ -1,0 +1,7 @@
+{
+  "note": "Initial long-running command returned success for all1143objects, but the open JSONL log visible across tool calls retained327rows. Preserved that observed log and regenerated a complete cache-only receipt log after verifying all1143rawfilesexist. No files were redownloaded for receipt reconstruction.",
+  "initial_reported_requested": 1143,
+  "initial_reported_success": 1143,
+  "initial_reported_failed": 0,
+  "initial_reported_bytes": 183225502
+}

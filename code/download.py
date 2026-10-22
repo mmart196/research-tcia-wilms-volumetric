@@ -140,4 +140,10 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import subprocess
+    import sys
+    if "--legacy" in sys.argv:
+        sys.argv.remove("--legacy")
+        main()
+    else:
+        raise SystemExit(subprocess.call([sys.executable, str(Path(__file__).with_name("retrieve_annotations.py")), *sys.argv[1:]]))

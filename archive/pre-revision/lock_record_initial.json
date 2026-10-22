@@ -1,0 +1,6 @@
+{
+  "locked_utc": "2026-09-22T11:01:09.671755+00:00",
+  "sha256": "28dd55cd142e98b4c0debd0b5bb728c74a1cb131511295f8922e8f2dd57441fd",
+  "status": "Post-audit amendment; original outcomes/source records/metadata eligibility already inspected. Revised outcomes not yet calculated.",
+  "source_identity_decisions": "Unique intended tracked ROI only; ignore unrelated/untracked ROIs; unresolved anatomic mismatch excludes patient; PAURIY typo canonicalized after raw source identity validation."
+}

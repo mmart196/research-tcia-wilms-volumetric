@@ -1,0 +1,120 @@
+{
+ "n_excluded_no_followup1_ct": {
+  "AREN0532": 488,
+  "AREN0533": 189,
+  "AREN0534": 43,
+  "overall": 720
+ },
+ "categories": {
+  "no_post_baseline_records": {
+   "label": "No annotation record at any post-baseline visit",
+   "AREN0532": 464,
+   "AREN0533": 15,
+   "AREN0534": 0,
+   "overall": 479
+  },
+  "post_baseline_without_renal_segmentation": {
+   "label": "Post-baseline records without renal segmentation",
+   "AREN0532": 18,
+   "AREN0533": 174,
+   "AREN0534": 6,
+   "overall": 198
+  },
+  "renal_segmentation_other_modality_or_visit": {
+   "label": "Renal segmentation only on MRI or at a later visit",
+   "AREN0532": 6,
+   "AREN0533": 0,
+   "AREN0534": 37,
+   "overall": 43
+  }
+ },
+ "details": {
+  "ct_at_later_visit_only": {
+   "AREN0532": 5,
+   "AREN0533": 0,
+   "AREN0534": 0,
+   "overall": 5
+  },
+  "mri_at_followup1": {
+   "AREN0532": 1,
+   "AREN0533": 0,
+   "AREN0534": 36,
+   "overall": 37
+  },
+  "mri_at_later_visit_only": {
+   "AREN0532": 0,
+   "AREN0533": 0,
+   "AREN0534": 1,
+   "overall": 1
+  },
+  "negative_and_nonrenal": {
+   "AREN0532": 5,
+   "AREN0533": 2,
+   "AREN0534": 2,
+   "overall": 9
+  },
+  "negative_assessment_only": {
+   "AREN0532": 11,
+   "AREN0533": 47,
+   "AREN0534": 4,
+   "overall": 62
+  },
+  "nonrenal_segmentation_only": {
+   "AREN0532": 2,
+   "AREN0533": 125,
+   "AREN0534": 0,
+   "overall": 127
+  },
+  "nonrenal_only_with_lung_lesion": {
+   "AREN0532": 2,
+   "AREN0533": 123,
+   "AREN0534": 0,
+   "overall": 125
+  }
+ },
+ "flow": {
+  "ambiguous_examination": {
+   "AREN0532": 1,
+   "AREN0533": 0,
+   "AREN0534": 1,
+   "overall": 2
+  },
+  "included": {
+   "AREN0532": 18,
+   "AREN0533": 81,
+   "AREN0534": 128,
+   "overall": 227
+  },
+  "no_baseline_modality_annotation": {
+   "AREN0532": 28,
+   "AREN0533": 4,
+   "AREN0534": 45,
+   "overall": 77
+  },
+  "no_followup1_modality_annotation": {
+   "AREN0532": 488,
+   "AREN0533": 189,
+   "AREN0534": 43,
+   "overall": 720
+  },
+  "source_object_not_verified": {
+   "AREN0532": 0,
+   "AREN0533": 2,
+   "AREN0534": 6,
+   "overall": 8
+  },
+  "unmatched_target_set_or_labels": {
+   "AREN0532": 0,
+   "AREN0533": 0,
+   "AREN0534": 13,
+   "overall": 13
+  },
+  "screened": {
+   "AREN0532": 535,
+   "AREN0533": 276,
+   "AREN0534": 236,
+   "overall": 1047
+  }
+ },
+ "note": "Post hoc descriptive tabulation added during peer review. Uses metadata only; no volumes or outcomes; eligibility unchanged. The archive does not record why follow-up annotations are absent."
+}

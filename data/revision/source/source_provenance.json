@@ -1,0 +1,71 @@
+{
+  "snapshot_utc": "2026-09-22T11:11:30.977175+00:00",
+  "requested_objects": 1143,
+  "receipt_objects": 1143,
+  "retrieval_log_rows": 1143,
+  "retrieval_log_unique_uids": 1143,
+  "missing_raw_objects": [],
+  "sha256_log_mismatches": [],
+  "raw_total_bytes": 183225502,
+  "metadata_sources": [
+    {
+      "collection": "AREN0532",
+      "page": "https://www.cancerimagingarchive.net/analysis-result/aren0532-tumor-annotations/",
+      "metadata_links": [
+        "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_2025-12-03-1.csv",
+        "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_01122023.csv"
+      ],
+      "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0532_2025-12-03-1.csv",
+      "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0532_2025-12-03-1.csv",
+      "sha256": "82ed5a569d58ba9043d2ef6fc70e25f14425560eadfe2fac39914f94ec785e69",
+      "bytes": 1209528
+    },
+    {
+      "collection": "AREN0533",
+      "page": "https://www.cancerimagingarchive.net/analysis-result/aren0533-tumor-annotations/",
+      "metadata_links": [
+        "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0533_2025-12-19.csv",
+        "https://www.cancerimagingarchive.net/wp-content/uploads/AREN0533_Annotations_Metadata__01-12-2023.csv"
+      ],
+      "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0533_2025-12-19.csv",
+      "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0533_2025-12-19.csv",
+      "sha256": "fb9c2125857568d11ff3bbdc59afc8d4b5513a35f563a97cc3618ffcdc7f7e6a",
+      "bytes": 1500697
+    },
+    {
+      "collection": "AREN0534",
+      "page": "https://www.cancerimagingarchive.net/analysis-result/aren0534-tumor-annotations/",
+      "metadata_links": [
+        "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_2025-12-22.csv",
+        "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_01122023.csv"
+      ],
+      "csv_url": "https://www.cancerimagingarchive.net/wp-content/uploads/Metadata_Report_AREN0534_2025-12-22.csv",
+      "csv_file": "/workspace/scratch/d813069df87a/audit_work/clinical/Metadata_Report_AREN0534_2025-12-22.csv",
+      "sha256": "b63f7472ada25f161a0f0ef0378a887c4144872e064e8b96a74805af338429c5",
+      "bytes": 1883372
+    }
+  ],
+  "source_volume_tag": "3006,002C",
+  "source_volume_units": "cubic centimeters (mL)",
+  "source_CT_probe": {
+    "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.3.6.1.4.1.14519.5.2.1.1610.1212.311010248220415937185758275694",
+    "kind": "original_source_CT_probe",
+    "patient_id": "AREN0533-PARUTG",
+    "referenced_series_uid": "1.3.6.1.4.1.14519.5.2.1.1610.1212.311010248220415937185758275694",
+    "status": 400,
+    "error_body": "Image with given SeriesInstanceUID,1.3.6.1.4.1.14519.5.2.1.1610.1212.311010248220415937185758275694, is not in public domain."
+  },
+  "scripts_sha256": {
+    "retrieve_current_annotations.py": "0830b44941cf07c531524a8200bc15e2225f48e92ade821611012e1ec5d418e8",
+    "verify_current_annotations.py": "047e2e10bb788f2ec60ac4d95d1776eceac2c57e61243012b3223f161fcf58ca"
+  },
+  "all_files_verified_by_sha256": true,
+  "verification_rows": 1143,
+  "verification_status_counts": {
+    "verified": 1128,
+    "unresolved": 15,
+    "error": 0
+  },
+  "note": "Complete cached receipt log regenerated after first-pass open-log visibility issue; original observed327-row log preserved. No second-pass network requests required.",
+  "verification_file_sha256": "ef91d05b42b0da2a730622ea24fb939153c5bb4245c1deffc261e4ebf2028738"
+}

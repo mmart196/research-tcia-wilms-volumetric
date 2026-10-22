@@ -1,114 +1,2396 @@
 {
-  "flow": {
-    "metadata_subjects_any_kidney_seg": 1047,
-    "metadata_paired_pre_post": 330,
-    "extracted_subjects_any_usable_ct_volume": 299,
-    "paired_analyzed": 259,
-    "excluded_no_pre_or_post_volume": 71
+  "analysis_version": "post-audit-v2",
+  "generated_utc": "2026-09-22T11:20:39.860536+00:00",
+  "endpoint": "Change in summed archive-reported volumes of identical annotated renal targets, baseline to Post-Chemotherapy #1",
+  "amendment_sha256": "c93d73c4525feea5158df79124c8b6d4fda4c4db2bb9e73483d8d7a77b46096a",
+  "analysis_code_sha256": "c08eb1b0853f72f655396eebf83edfa028108193f654dc9bd591099e3f76d7ff",
+  "source_verification_sha256": "ef91d05b42b0da2a730622ea24fb939153c5bb4245c1deffc261e4ebf2028738",
+  "source_metadata": [
+    {
+      "collection": "AREN0532",
+      "filename": "Metadata_Report_AREN0532_2025-12-03-1.csv",
+      "sha256": "82ed5a569d58ba9043d2ef6fc70e25f14425560eadfe2fac39914f94ec785e69",
+      "rows": 2525
+    },
+    {
+      "collection": "AREN0533",
+      "filename": "Metadata_Report_AREN0533_2025-12-19.csv",
+      "sha256": "fb9c2125857568d11ff3bbdc59afc8d4b5513a35f563a97cc3618ffcdc7f7e6a",
+      "rows": 3033
+    },
+    {
+      "collection": "AREN0534",
+      "filename": "Metadata_Report_AREN0534_2025-12-22.csv",
+      "sha256": "b63f7472ada25f161a0f0ef0378a887c4144872e064e8b96a74805af338429c5",
+      "rows": 3797
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0"
   },
-  "cohort": {
-    "n": 259,
-    "age_median": 3.0,
-    "age_iqr": [
-      3.0,
-      3.0
-    ],
-    "age_min": 0.9166666666666666,
-    "age_max": 9.0,
-    "sex_counts": {
-      "F": 144,
-      "M": 114,
-      "O": 1
+  "scope": "Descriptive archive-derived lesion measurements; treatment/surgical timing and clinical outcomes not linked.",
+  "analysis_lock_record": {
+    "locked_utc": "2026-09-22T11:08:21.687047+00:00",
+    "sha256": "c93d73c4525feea5158df79124c8b6d4fda4c4db2bb9e73483d8d7a77b46096a",
+    "prior_lock_utc": "2026-09-22T11:01:09.671755+00:00",
+    "prior_sha256": "28dd55cd142e98b4c0debd0b5bb728c74a1cb131511295f8922e8f2dd57441fd",
+    "status": "Post-audit amendment with pre-outcome source-name normalization addendum. Original outcomes/source records/metadata eligibility previously inspected; revised outcomes not yet calculated.",
+    "naming_rule": "Only omitted numeric ROIName suffix with exact unique TrackingUID and unchanged tracked kidney/known side is normalized."
+  },
+  "source_verification_summary": {
+    "annotation_objects_checked": 1143,
+    "status_counts": {
+      "verified": 1128,
+      "unresolved": 15
     },
-    "laterality_counts": {
-      "bilateral": 94,
-      "right": 86,
-      "left": 74,
-      "unknown": 5
-    },
-    "collection_counts": {
-      "AREN0534": 152,
-      "AREN0533": 83,
-      "AREN0532": 24
+    "unresolved_reason_counts": {
+      "invalid_contour_coordinates": 14,
+      "roi_name_tracking_anatomy_mismatch": 1
     }
   },
-  "primary": {
-    "pre_median_ml": 550.77,
-    "pre_iqr_ml": [
-      298.765,
-      864.065
-    ],
-    "post_median_ml": 109.66000000000001,
-    "post_iqr_ml": [
-      49.28,
-      251.465
-    ],
-    "first_post_timepoint_counts": {
-      "1": 248,
-      "2": 9,
-      "3": 2
+  "ct_primary": {
+    "pooled_descriptive": {
+      "n": 227,
+      "n_targets": 349,
+      "target_count_distribution": {
+        "1": 105,
+        "2": 122
+      },
+      "annotated_laterality_counts": {
+        "right": 79,
+        "bilateral": 76,
+        "left": 72
+      },
+      "n_numerical_decrease": 212,
+      "n_numerical_increase": 15,
+      "n_unchanged": 0,
+      "baseline_volume_ml": {
+        "median": 556.23973,
+        "q1": 321.906833,
+        "q3": 859.690789,
+        "min": 1.028832,
+        "max": 2466.527046
+      },
+      "followup_volume_ml": {
+        "median": 117.169635,
+        "q1": 54.190349999999995,
+        "q3": 262.9712405,
+        "min": 0.161081,
+        "max": 2022.183004
+      },
+      "absolute_change_ml": {
+        "median": -345.518322,
+        "q1": -567.910307,
+        "q3": -132.84851499999996,
+        "min": -2063.730806,
+        "max": 701.8806140000002
+      },
+      "percent_change": {
+        "median": -77.17959210526058,
+        "q1": -86.35067716858575,
+        "q3": -50.4041168478754,
+        "min": -97.55857214182856,
+        "max": 197.18074261644693
+      },
+      "interval_days": {
+        "median": 44.0,
+        "q1": 40.0,
+        "q3": 48.0,
+        "min": 22.0,
+        "max": 388.0
+      },
+      "median_percent_change_ci95": {
+        "lower": -80.63070732271262,
+        "upper": -72.42792006245222,
+        "coverage": 0.9537766157072464,
+        "rank": 99,
+        "method": "central order-statistic exact binomial"
+      },
+      "n_interval_over_90_days": 4
     },
-    "pct_change_median": -78.18220219656436,
-    "pct_change_iqr": [
-      -88.73969364949285,
-      -54.25417408603471
-    ],
-    "pct_change_mean": -62.51944550010142,
-    "hl_pseudomedian": -71.61472635222414,
-    "hl_ci_95": [
-      -75.44455276592016,
-      -66.9389613778106
-    ],
-    "n_decreased": 240,
-    "n_increased": 19,
-    "n_unchanged": 0,
-    "wilcoxon_statistic": 1567.0,
-    "wilcoxon_p": 1.0872527029435294e-36
-  },
-  "subgroups_by_collection": {
-    "AREN0532": {
-      "n": 24,
-      "median_pct_change": -86.03129573317719,
-      "iqr_pct_change": [
-        -93.49578183625415,
-        -73.77546535271964
-      ]
-    },
-    "AREN0533": {
-      "n": 83,
-      "median_pct_change": -79.94563791993514,
-      "iqr_pct_change": [
-        -86.30827100080124,
-        -65.71935636804326
-      ]
-    },
-    "AREN0534": {
-      "n": 152,
-      "median_pct_change": -71.65820354273504,
-      "iqr_pct_change": [
-        -88.89800178700715,
-        -46.424843146219494
-      ]
+    "by_collection": {
+      "AREN0532": {
+        "n": 18,
+        "n_targets": 20,
+        "target_count_distribution": {
+          "1": 16,
+          "2": 2
+        },
+        "annotated_laterality_counts": {
+          "right": 11,
+          "left": 7
+        },
+        "n_numerical_decrease": 16,
+        "n_numerical_increase": 2,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 661.1786565,
+          "q1": 510.44260099999997,
+          "q3": 937.6325792499999,
+          "min": 234.202815,
+          "max": 1600.991944
+        },
+        "followup_volume_ml": {
+          "median": 94.01127449999998,
+          "q1": 46.986674,
+          "q3": 284.22735775,
+          "min": 21.322598,
+          "max": 2022.183004
+        },
+        "absolute_change_ml": {
+          "median": -473.1067265,
+          "q1": -750.9053275,
+          "q3": -277.01577675,
+          "min": -1463.672066,
+          "max": 421.1910599999999
+        },
+        "percent_change": {
+          "median": -85.23822456997362,
+          "q1": -92.70047851009551,
+          "q3": -66.23681636374738,
+          "min": -95.67755134949613,
+          "max": 30.679378675613414
+        },
+        "interval_days": {
+          "median": 47.0,
+          "q1": 40.75,
+          "q3": 62.0,
+          "min": 35.0,
+          "max": 388.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -92.80826311516238,
+          "upper": -63.84860081551395,
+          "coverage": 0.9691162109375,
+          "rank": 5,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 2
+      },
+      "AREN0533": {
+        "n": 81,
+        "n_targets": 85,
+        "target_count_distribution": {
+          "1": 77,
+          "2": 4
+        },
+        "annotated_laterality_counts": {
+          "right": 42,
+          "left": 39
+        },
+        "n_numerical_decrease": 80,
+        "n_numerical_increase": 1,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 736.417223,
+          "q1": 518.809141,
+          "q3": 981.480073,
+          "min": 169.763756,
+          "max": 2466.527046
+        },
+        "followup_volume_ml": {
+          "median": 155.243149,
+          "q1": 71.381091,
+          "q3": 269.097932,
+          "min": 12.982302,
+          "max": 2005.297927
+        },
+        "absolute_change_ml": {
+          "median": -486.08333600000003,
+          "q1": -760.5812800000001,
+          "q3": -333.486892,
+          "min": -2063.730806,
+          "max": 686.2830879999999
+        },
+        "percent_change": {
+          "median": -79.58488766814656,
+          "q1": -85.5768409730755,
+          "q3": -66.21792602392536,
+          "min": -97.55857214182856,
+          "max": 60.13366082110144
+        },
+        "interval_days": {
+          "median": 45.0,
+          "q1": 40.0,
+          "q3": 48.0,
+          "min": 22.0,
+          "max": 56.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -82.50863472534557,
+          "upper": -74.70926078690154,
+          "coverage": 0.9551714776142014,
+          "rank": 32,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 0
+      },
+      "AREN0534": {
+        "n": 128,
+        "n_targets": 244,
+        "target_count_distribution": {
+          "1": 12,
+          "2": 116
+        },
+        "annotated_laterality_counts": {
+          "bilateral": 76,
+          "right": 26,
+          "left": 26
+        },
+        "n_numerical_decrease": 116,
+        "n_numerical_increase": 12,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 419.57142250000004,
+          "q1": 184.8145325,
+          "q3": 658.627029,
+          "min": 1.028832,
+          "max": 2196.430335
+        },
+        "followup_volume_ml": {
+          "median": 92.2781785,
+          "q1": 42.445017750000005,
+          "q3": 245.68188800000001,
+          "min": 0.161081,
+          "max": 1762.9782109999999
+        },
+        "absolute_change_ml": {
+          "median": -200.0701285,
+          "q1": -439.4161895,
+          "q3": -63.973551750000006,
+          "min": -1238.548826,
+          "max": 701.8806140000002
+        },
+        "percent_change": {
+          "median": -71.79900766035175,
+          "q1": -85.98174948469911,
+          "q3": -41.10470008885131,
+          "min": -95.04410566953403,
+          "max": 197.18074261644693
+        },
+        "interval_days": {
+          "median": 43.0,
+          "q1": 40.0,
+          "q3": 47.0,
+          "min": 34.0,
+          "max": 323.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -78.38568937289314,
+          "upper": -65.43319994500217,
+          "coverage": 0.9583617161604975,
+          "rank": 53,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 2
+      }
     }
   },
-  "volume_validation": {
-    "n_rois": 1141,
-    "spearman_rho": 0.9983159848287193,
-    "median_abs_pct_diff": 3.9731039635256047,
-    "iqr_abs_pct_diff": [
-      1.3084517311368244,
-      12.622172577492327
-    ],
-    "size_corr_absdiff": -0.6129648440419571,
-    "pre_n": 473,
-    "pre_signed_median_pct": 0.6933659966316008,
-    "pre_abs_median_pct": 2.659257789243893,
-    "pre_median_tool_vol_ml": 207.44,
-    "post_n": 668,
-    "post_signed_median_pct": 0.35816831392650605,
-    "post_abs_median_pct": 5.62739165032108,
-    "post_median_tool_vol_ml": 29.07
+  "ct_flow": {
+    "screened_any_renal_segmentation": {
+      "overall": 1047,
+      "AREN0532": 535,
+      "AREN0533": 276,
+      "AREN0534": 236
+    },
+    "mutually_exclusive_first_failure": {
+      "no_baseline_modality_annotation": {
+        "label": "No baseline renal segmentation in selected modality",
+        "overall": 77,
+        "AREN0532": 28,
+        "AREN0533": 4,
+        "AREN0534": 45
+      },
+      "no_followup1_modality_annotation": {
+        "label": "No follow-up #1 renal segmentation in selected modality",
+        "overall": 720,
+        "AREN0532": 488,
+        "AREN0533": 189,
+        "AREN0534": 43
+      },
+      "historical_postoperative_recurrence_conflict": {
+        "label": "Historical postoperative/recurrence label conflict",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "invalid_required_metadata_or_volume": {
+        "label": "Missing/invalid identity, date, source, label or positive volume",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "ambiguous_examination": {
+        "label": "Multiple source examinations/dates in a selected visit",
+        "overall": 2,
+        "AREN0532": 1,
+        "AREN0533": 0,
+        "AREN0534": 1
+      },
+      "repeated_target_annotation": {
+        "label": "Repeated target annotation within a selected visit",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "unmatched_target_set_or_labels": {
+        "label": "Different renal tracking sets or incompatible target labels",
+        "overall": 13,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 13
+      },
+      "nonpositive_examination_interval": {
+        "label": "Follow-up examination not after baseline",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "source_object_not_verified": {
+        "label": "Source ROI identity/volume verification unresolved",
+        "overall": 8,
+        "AREN0532": 0,
+        "AREN0533": 2,
+        "AREN0534": 6
+      },
+      "included": {
+        "label": "Included matched-target pair",
+        "overall": 227,
+        "AREN0532": 18,
+        "AREN0533": 81,
+        "AREN0534": 128
+      }
+    }
   },
-  "table1_md": "| Characteristic | AREN0532 (n=24) | AREN0533 (n=83) | AREN0534 (n=152) | Overall (n=259) |\n|---|---|---|---|---|\n| Pre-chemo volume, mL, median (IQR) | 677.6 (443.9\u20131013.2) | 752.3 (525.7\u20131035.9) | 380.1 (156.0\u2013667.9) | 550.8 (298.8\u2013864.1) |\n| First post-chemo volume, mL, median (IQR) | 91.7 (58.1\u2013192.5) | 160.5 (84.2\u2013276.8) | 83.9 (30.5\u2013221.8) | 109.7 (49.3\u2013251.5) |\n| Volume change, %, median (IQR) | -86.0 (-93.5\u2013-73.8) | -79.9 (-86.3\u2013-65.7) | -71.7 (-88.9\u2013-46.4) | -78.2 (-88.7\u2013-54.3) |\n| Sex, male/female | 11/13 | 41/42 | 62/89 | 114/144 |\n| Laterality, left/right/bilateral | 8/15/1 | 38/42/0 | 28/29/93 | 74/86/94 |",
-  "flow_postop_only_excluded": 1
+  "mr_sensitivity": {
+    "pooled_descriptive": {
+      "n": 39,
+      "n_targets": 75,
+      "target_count_distribution": {
+        "1": 3,
+        "2": 36
+      },
+      "annotated_laterality_counts": {
+        "bilateral": 17,
+        "left": 12,
+        "right": 10
+      },
+      "n_numerical_decrease": 34,
+      "n_numerical_increase": 5,
+      "n_unchanged": 0,
+      "baseline_volume_ml": {
+        "median": 391.279811,
+        "q1": 111.51773800000001,
+        "q3": 509.99771350000003,
+        "min": 0.137697,
+        "max": 1132.24089
+      },
+      "followup_volume_ml": {
+        "median": 101.459148,
+        "q1": 17.8459455,
+        "q3": 245.443761,
+        "min": 0.119865,
+        "max": 853.469022
+      },
+      "absolute_change_ml": {
+        "median": -163.74201400000004,
+        "q1": -296.554104,
+        "q3": -4.7352039999999995,
+        "min": -877.52175,
+        "max": 189.256807
+      },
+      "percent_change": {
+        "median": -69.5280795441447,
+        "q1": -87.02256115874016,
+        "q3": -17.08294613264805,
+        "min": -97.23907745827285,
+        "max": 184.92807353034664
+      },
+      "interval_days": {
+        "median": 43.0,
+        "q1": 39.5,
+        "q3": 46.0,
+        "min": 30.0,
+        "max": 64.0
+      },
+      "median_percent_change_ci95": {
+        "lower": -80.5379182715298,
+        "upper": -40.46810910907785,
+        "coverage": 0.976297297529527,
+        "rank": 13,
+        "method": "central order-statistic exact binomial"
+      },
+      "n_interval_over_90_days": 0
+    },
+    "by_collection": {
+      "AREN0532": {
+        "n": 0
+      },
+      "AREN0533": {
+        "n": 0
+      },
+      "AREN0534": {
+        "n": 39,
+        "n_targets": 75,
+        "target_count_distribution": {
+          "1": 3,
+          "2": 36
+        },
+        "annotated_laterality_counts": {
+          "bilateral": 17,
+          "left": 12,
+          "right": 10
+        },
+        "n_numerical_decrease": 34,
+        "n_numerical_increase": 5,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 391.279811,
+          "q1": 111.51773800000001,
+          "q3": 509.99771350000003,
+          "min": 0.137697,
+          "max": 1132.24089
+        },
+        "followup_volume_ml": {
+          "median": 101.459148,
+          "q1": 17.8459455,
+          "q3": 245.443761,
+          "min": 0.119865,
+          "max": 853.469022
+        },
+        "absolute_change_ml": {
+          "median": -163.74201400000004,
+          "q1": -296.554104,
+          "q3": -4.7352039999999995,
+          "min": -877.52175,
+          "max": 189.256807
+        },
+        "percent_change": {
+          "median": -69.5280795441447,
+          "q1": -87.02256115874016,
+          "q3": -17.08294613264805,
+          "min": -97.23907745827285,
+          "max": 184.92807353034664
+        },
+        "interval_days": {
+          "median": 43.0,
+          "q1": 39.5,
+          "q3": 46.0,
+          "min": 30.0,
+          "max": 64.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -80.5379182715298,
+          "upper": -40.46810910907785,
+          "coverage": 0.976297297529527,
+          "rank": 13,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 0
+      }
+    }
+  },
+  "mr_flow": {
+    "screened_any_renal_segmentation": {
+      "overall": 1047,
+      "AREN0532": 535,
+      "AREN0533": 276,
+      "AREN0534": 236
+    },
+    "mutually_exclusive_first_failure": {
+      "no_baseline_modality_annotation": {
+        "label": "No baseline renal segmentation in selected modality",
+        "overall": 932,
+        "AREN0532": 486,
+        "AREN0533": 276,
+        "AREN0534": 170
+      },
+      "no_followup1_modality_annotation": {
+        "label": "No follow-up #1 renal segmentation in selected modality",
+        "overall": 66,
+        "AREN0532": 49,
+        "AREN0533": 0,
+        "AREN0534": 17
+      },
+      "historical_postoperative_recurrence_conflict": {
+        "label": "Historical postoperative/recurrence label conflict",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "invalid_required_metadata_or_volume": {
+        "label": "Missing/invalid identity, date, source, label or positive volume",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "ambiguous_examination": {
+        "label": "Multiple source examinations/dates in a selected visit",
+        "overall": 2,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 2
+      },
+      "repeated_target_annotation": {
+        "label": "Repeated target annotation within a selected visit",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "unmatched_target_set_or_labels": {
+        "label": "Different renal tracking sets or incompatible target labels",
+        "overall": 6,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 6
+      },
+      "nonpositive_examination_interval": {
+        "label": "Follow-up examination not after baseline",
+        "overall": 0,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 0
+      },
+      "source_object_not_verified": {
+        "label": "Source ROI identity/volume verification unresolved",
+        "overall": 2,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 2
+      },
+      "included": {
+        "label": "Included matched-target pair",
+        "overall": 39,
+        "AREN0532": 0,
+        "AREN0533": 0,
+        "AREN0534": 39
+      }
+    }
+  },
+  "ct_interval_le90_days": {
+    "pooled_descriptive": {
+      "n": 223,
+      "n_targets": 343,
+      "target_count_distribution": {
+        "1": 103,
+        "2": 120
+      },
+      "annotated_laterality_counts": {
+        "right": 76,
+        "bilateral": 76,
+        "left": 71
+      },
+      "n_numerical_decrease": 208,
+      "n_numerical_increase": 15,
+      "n_unchanged": 0,
+      "baseline_volume_ml": {
+        "median": 559.548656,
+        "q1": 324.259234,
+        "q3": 869.344944,
+        "min": 1.028832,
+        "max": 2466.527046
+      },
+      "followup_volume_ml": {
+        "median": 122.257239,
+        "q1": 55.46124,
+        "q3": 268.0757995,
+        "min": 0.161081,
+        "max": 2022.183004
+      },
+      "absolute_change_ml": {
+        "median": -345.518322,
+        "q1": -595.5107765,
+        "q3": -132.84851499999996,
+        "min": -2063.730806,
+        "max": 701.8806140000002
+      },
+      "percent_change": {
+        "median": -76.84959140264495,
+        "q1": -86.22348381386723,
+        "q3": -49.11069791637199,
+        "min": -97.55857214182856,
+        "max": 197.18074261644693
+      },
+      "interval_days": {
+        "median": 44.0,
+        "q1": 40.0,
+        "q3": 48.0,
+        "min": 22.0,
+        "max": 88.0
+      },
+      "median_percent_change_ci95": {
+        "lower": -80.53097897703121,
+        "upper": -71.97362026760021,
+        "coverage": 0.9556998300698447,
+        "rank": 97,
+        "method": "central order-statistic exact binomial"
+      },
+      "n_interval_over_90_days": 0
+    },
+    "by_collection": {
+      "AREN0532": {
+        "n": 16,
+        "n_targets": 18,
+        "target_count_distribution": {
+          "1": 14,
+          "2": 2
+        },
+        "annotated_laterality_counts": {
+          "right": 10,
+          "left": 6
+        },
+        "n_numerical_decrease": 14,
+        "n_numerical_increase": 2,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 731.822441,
+          "q1": 571.751804,
+          "q3": 1008.8103482500001,
+          "min": 384.901226,
+          "max": 1600.991944
+        },
+        "followup_volume_ml": {
+          "median": 100.869576,
+          "q1": 65.8755935,
+          "q3": 364.79706175,
+          "min": 32.306687000000004,
+          "max": 2022.183004
+        },
+        "absolute_change_ml": {
+          "median": -499.09118299999994,
+          "q1": -835.0656672499999,
+          "q3": -300.50780825000004,
+          "min": -1463.672066,
+          "max": 421.1910599999999
+        },
+        "percent_change": {
+          "median": -83.57326225448654,
+          "q1": -92.48490929996174,
+          "q3": -57.61950606552932,
+          "min": -94.86600689793218,
+          "max": 30.679378675613414
+        },
+        "interval_days": {
+          "median": 46.5,
+          "q1": 40.0,
+          "q3": 50.0,
+          "min": 35.0,
+          "max": 88.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -92.80826311516238,
+          "upper": -38.93222181557545,
+          "coverage": 0.978729248046875,
+          "rank": 4,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 0
+      },
+      "AREN0533": {
+        "n": 81,
+        "n_targets": 85,
+        "target_count_distribution": {
+          "1": 77,
+          "2": 4
+        },
+        "annotated_laterality_counts": {
+          "right": 42,
+          "left": 39
+        },
+        "n_numerical_decrease": 80,
+        "n_numerical_increase": 1,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 736.417223,
+          "q1": 518.809141,
+          "q3": 981.480073,
+          "min": 169.763756,
+          "max": 2466.527046
+        },
+        "followup_volume_ml": {
+          "median": 155.243149,
+          "q1": 71.381091,
+          "q3": 269.097932,
+          "min": 12.982302,
+          "max": 2005.297927
+        },
+        "absolute_change_ml": {
+          "median": -486.08333600000003,
+          "q1": -760.5812800000001,
+          "q3": -333.486892,
+          "min": -2063.730806,
+          "max": 686.2830879999999
+        },
+        "percent_change": {
+          "median": -79.58488766814656,
+          "q1": -85.5768409730755,
+          "q3": -66.21792602392536,
+          "min": -97.55857214182856,
+          "max": 60.13366082110144
+        },
+        "interval_days": {
+          "median": 45.0,
+          "q1": 40.0,
+          "q3": 48.0,
+          "min": 22.0,
+          "max": 56.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -82.50863472534557,
+          "upper": -74.70926078690154,
+          "coverage": 0.9551714776142014,
+          "rank": 32,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 0
+      },
+      "AREN0534": {
+        "n": 126,
+        "n_targets": 240,
+        "target_count_distribution": {
+          "1": 12,
+          "2": 114
+        },
+        "annotated_laterality_counts": {
+          "bilateral": 76,
+          "left": 26,
+          "right": 24
+        },
+        "n_numerical_decrease": 114,
+        "n_numerical_increase": 12,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 419.57142250000004,
+          "q1": 188.598113,
+          "q3": 661.514095,
+          "min": 1.028832,
+          "max": 2196.430335
+        },
+        "followup_volume_ml": {
+          "median": 94.736527,
+          "q1": 43.096177250000004,
+          "q3": 249.82935,
+          "min": 0.161081,
+          "max": 1762.9782109999999
+        },
+        "absolute_change_ml": {
+          "median": -200.0701285,
+          "q1": -434.52853825,
+          "q3": -60.839221250000016,
+          "min": -1238.548826,
+          "max": 701.8806140000002
+        },
+        "percent_change": {
+          "median": -71.35028712667531,
+          "q1": -85.73358758538927,
+          "q3": -41.051417172878104,
+          "min": -95.04410566953403,
+          "max": 197.18074261644693
+        },
+        "interval_days": {
+          "median": 43.0,
+          "q1": 40.0,
+          "q3": 46.75,
+          "min": 34.0,
+          "max": 62.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -77.43513799489304,
+          "upper": -64.85982978247183,
+          "coverage": 0.9599642406437161,
+          "rank": 52,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 0
+      }
+    }
+  },
+  "ct_mr_patient_overlap_n": 0,
+  "ct_intervals_over90_days": [
+    {
+      "patient_id": "AREN0532-PARXES",
+      "collection": "AREN0532",
+      "baseline_date": "1959-12-18",
+      "followup_date": "1961-01-09",
+      "interval_days": 388
+    },
+    {
+      "patient_id": "AREN0534-PATJTN",
+      "collection": "AREN0534",
+      "baseline_date": "1959-03-19",
+      "followup_date": "1960-02-05",
+      "interval_days": 323
+    },
+    {
+      "patient_id": "AREN0534-PAUJHA",
+      "collection": "AREN0534",
+      "baseline_date": "1959-05-08",
+      "followup_date": "1960-02-09",
+      "interval_days": 277
+    },
+    {
+      "patient_id": "AREN0532-PARYUS",
+      "collection": "AREN0532",
+      "baseline_date": "1959-12-17",
+      "followup_date": "1960-03-24",
+      "interval_days": 98
+    }
+  ],
+  "negative_assessment_screening": {
+    "any_negative_assessment_patients": 694,
+    "note": "Negative assessments are not necessarily renal or target-specific. No missing target or absent positive segmentation was recoded as zero."
+  },
+  "geometry_sensitivity": {
+    "scope": "Numerical recomputation of identical source-verified primary targets; only complete computable pairs; stored archive volume remains primary",
+    "geometry_source_sha256": "62d21c243d45f864c5e0caf86a25cd4a3be4a95e47c05d36c38a7002b94b13c6",
+    "eligible_primary_n": 227,
+    "complete_geometry_n": 57,
+    "excluded_geometry_n": 170,
+    "omitted_patient_reasons": [
+      {
+        "patient_id": "AREN0532-PARENY",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PARYUS",
+        "collection": "AREN0532",
+        "reasons": "irregular_plane_spacing",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PARZVC",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PASACL",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PATYIY",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PAUBMV",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PAUCXH",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PAUHWG",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PAUSEM",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PAUSGK",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PAVDFK",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PAVETN",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PAVGDY",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0532-PAVKIS",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0532-PAVNLU",
+        "collection": "AREN0532",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARKMM",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARMDA",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PARMGI",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARNJT",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon;irregular_plane_spacing",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARNTZ",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PARNZU",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARPUK",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PARRJG",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PARTSV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PARUTG",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PARWMD",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASBED",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASBNI",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASFNC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASIFZ",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon;irregular_plane_spacing",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASISU",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASJRV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASKZF",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASLDX",
+        "collection": "AREN0533",
+        "reasons": "irregular_plane_spacing",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASMRV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon;irregular_plane_spacing",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASMUH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASMYA",
+        "collection": "AREN0533",
+        "reasons": "irregular_plane_spacing",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASNWC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASRSW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASVDK",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASWZW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PASXUK",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PASZGG",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATBNH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATDXF",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATEWH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATFCD",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATHXW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATIFH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATILR",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATILY",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATKCH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATLAS",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATPPA",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATRBE",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATRJD",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATSYG",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATXPY",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PATYIH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PATYWB",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUAFC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUAPV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAUBSK",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUCCH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAUDMV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUFSH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUGIC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUHRC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUHTI",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUMKU",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAUMZR",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAUNXV",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAUTGA",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUXJH",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon;irregular_plane_spacing",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUXKP",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAUYVW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAVBSY",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon;irregular_plane_spacing",
+        "n_failed_targets": 4
+      },
+      {
+        "patient_id": "AREN0533-PAVBXS",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAVCDU",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVCDX",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVCSY",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVDSW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAVFAW",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVFJM",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVFLP",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAVGKC",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0533-PAVHCG",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0533-PAVHCZ",
+        "collection": "AREN0533",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PATBEU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 3
+      },
+      {
+        "patient_id": "AREN0534-PATDAR",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATGNJ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PATJTN",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATJYN",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon;single_slice",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PATKRZ",
+        "collection": "AREN0534",
+        "reasons": "overlapping_or_nested_closed_planar",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PATMCL",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATMFX",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATSHH",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATTBR",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATTYC",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PATUVU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATVHW",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATWSR",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATXGJ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATYIV",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATYLM",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PATZGY",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 3
+      },
+      {
+        "patient_id": "AREN0534-PAUBDU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUCWN",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUFAR",
+        "collection": "AREN0534",
+        "reasons": "irregular_plane_spacing",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUFGT",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUFVB",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUGMF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 3
+      },
+      {
+        "patient_id": "AREN0534-PAUHWD",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUIKJ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUJHA",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUJVR",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUKKV",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUMYF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUSJK",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUSSS",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUSYE",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUTBY",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUVCC",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAUWJI",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUWTD",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon;single_slice",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAUYJU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVACF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon;single_slice",
+        "n_failed_targets": 3
+      },
+      {
+        "patient_id": "AREN0534-PAVAFM",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVBWD",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVDDM",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 4
+      },
+      {
+        "patient_id": "AREN0534-PAVDLX",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon;overlapping_or_nested_closed_planar",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVDPP",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVEJJ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVFSF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVIEE",
+        "collection": "AREN0534",
+        "reasons": "irregular_plane_spacing",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVJCL",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVJDT",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVLCB",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVPDW",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVPHH",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVPJV",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVRSF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVSIE",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVSLP",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVTRJ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVVCK",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVXJT",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVXNS",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAVXSY",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVXYW",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAVYTT",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWAAW",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWAHG",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWBHC",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWCIP",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWEZK",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWFXF",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWHKU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWHVB",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWHWW",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWISE",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWJPZ",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 2
+      },
+      {
+        "patient_id": "AREN0534-PAWJRU",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWKLK",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWLAI",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWNCS",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWNNI",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWPHT",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWRFP",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      },
+      {
+        "patient_id": "AREN0534-PAWRWE",
+        "collection": "AREN0534",
+        "reasons": "invalid_polygon",
+        "n_failed_targets": 1
+      }
+    ],
+    "primary_on_complete_subset": {
+      "pooled_descriptive": {
+        "n": 57,
+        "n_targets": 98,
+        "target_count_distribution": {
+          "1": 16,
+          "2": 41
+        },
+        "annotated_laterality_counts": {
+          "bilateral": 26,
+          "right": 17,
+          "left": 14
+        },
+        "n_numerical_decrease": 51,
+        "n_numerical_increase": 6,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 344.024131,
+          "q1": 110.200606,
+          "q3": 562.255647,
+          "min": 1.028832,
+          "max": 2196.430335
+        },
+        "followup_volume_ml": {
+          "median": 59.933085,
+          "q1": 21.322598,
+          "q3": 137.131981,
+          "min": 0.51129,
+          "max": 1762.978211
+        },
+        "absolute_change_ml": {
+          "median": -202.345453,
+          "q1": -442.584324,
+          "q3": -35.23095,
+          "min": -1238.548826,
+          "max": 481.308393
+        },
+        "percent_change": {
+          "median": -78.02911737452825,
+          "q1": -86.95898889877435,
+          "q3": -51.464977889224016,
+          "min": -97.55857214182856,
+          "max": 73.41950028241263
+        },
+        "interval_days": {
+          "median": 44.0,
+          "q1": 40.0,
+          "q3": 49.0,
+          "min": 34.0,
+          "max": 388.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -82.52197584966274,
+          "upper": -68.99870382381349,
+          "coverage": 0.9668560322124946,
+          "rank": 21,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 1
+      },
+      "by_collection": {
+        "AREN0532": {
+          "n": 3,
+          "n_targets": 3,
+          "target_count_distribution": {
+            "1": 3
+          },
+          "annotated_laterality_counts": {
+            "right": 3
+          },
+          "n_numerical_decrease": 3,
+          "n_numerical_increase": 0,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 561.873263,
+            "q1": 527.586155,
+            "q3": 611.3152,
+            "min": 493.299047,
+            "max": 660.757137
+          },
+          "followup_volume_ml": {
+            "median": 37.927901,
+            "q1": 29.6252495,
+            "q3": 84.42868399999999,
+            "min": 21.322598,
+            "max": 130.929467
+          },
+          "absolute_change_ml": {
+            "median": -523.9453619999999,
+            "q1": -526.8865159999999,
+            "q3": -497.96090549999997,
+            "min": -529.8276699999999,
+            "max": -471.976449
+          },
+          "percent_change": {
+            "median": -93.24974091176855,
+            "q1": -94.46364613063233,
+            "q3": -86.71733713778407,
+            "min": -95.67755134949611,
+            "max": -80.18493336379959
+          },
+          "interval_days": {
+            "median": 66.0,
+            "q1": 50.5,
+            "q3": 227.0,
+            "min": 35.0,
+            "max": 388.0
+          },
+          "median_percent_change_ci95": {
+            "lower": null,
+            "upper": null,
+            "coverage": null,
+            "rank": null,
+            "method": "central order-statistic; finite interval unavailable"
+          },
+          "n_interval_over_90_days": 1
+        },
+        "AREN0533": {
+          "n": 8,
+          "n_targets": 8,
+          "target_count_distribution": {
+            "1": 8
+          },
+          "annotated_laterality_counts": {
+            "right": 5,
+            "left": 3
+          },
+          "n_numerical_decrease": 8,
+          "n_numerical_increase": 0,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 630.6066579999999,
+            "q1": 539.6543475,
+            "q3": 842.3506825,
+            "min": 369.979797,
+            "max": 895.117707
+          },
+          "followup_volume_ml": {
+            "median": 129.69461,
+            "q1": 101.805241,
+            "q3": 212.07569124999998,
+            "min": 13.727066,
+            "max": 417.387529
+          },
+          "absolute_change_ml": {
+            "median": -507.0860025,
+            "q1": -555.5715432499999,
+            "q3": -431.618629,
+            "min": -673.623084,
+            "max": -232.847816
+          },
+          "percent_change": {
+            "median": -79.28004817577974,
+            "q1": -83.67625417735375,
+            "q3": -62.15414513786487,
+            "min": -97.55857214182856,
+            "max": -51.464977889224016
+          },
+          "interval_days": {
+            "median": 44.0,
+            "q1": 39.5,
+            "q3": 47.75,
+            "min": 37.0,
+            "max": 52.0
+          },
+          "median_percent_change_ci95": {
+            "lower": -97.55857214182856,
+            "upper": -51.464977889224016,
+            "coverage": 0.9921875,
+            "rank": 1,
+            "method": "central order-statistic exact binomial"
+          },
+          "n_interval_over_90_days": 0
+        },
+        "AREN0534": {
+          "n": 46,
+          "n_targets": 87,
+          "target_count_distribution": {
+            "1": 5,
+            "2": 41
+          },
+          "annotated_laterality_counts": {
+            "bilateral": 26,
+            "left": 11,
+            "right": 9
+          },
+          "n_numerical_decrease": 40,
+          "n_numerical_increase": 6,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 253.0507385,
+            "q1": 92.09590625,
+            "q3": 524.54760425,
+            "min": 1.028832,
+            "max": 2196.430335
+          },
+          "followup_volume_ml": {
+            "median": 51.152389,
+            "q1": 13.3624805,
+            "q3": 127.32614375,
+            "min": 0.51129,
+            "max": 1762.978211
+          },
+          "absolute_change_ml": {
+            "median": -139.271732,
+            "q1": -287.29484800000006,
+            "q3": -6.448097500000001,
+            "min": -1238.548826,
+            "max": 481.308393
+          },
+          "percent_change": {
+            "median": -76.199475289251,
+            "q1": -86.61805813348116,
+            "q3": -37.089306650469446,
+            "min": -94.6239585433633,
+            "max": 73.41950028241263
+          },
+          "interval_days": {
+            "median": 44.0,
+            "q1": 41.0,
+            "q3": 49.0,
+            "min": 34.0,
+            "max": 60.0
+          },
+          "median_percent_change_ci95": {
+            "lower": -82.60733315986096,
+            "upper": -65.43319994500217,
+            "coverage": 0.9741039182067652,
+            "rank": 16,
+            "method": "central order-statistic exact binomial"
+          },
+          "n_interval_over_90_days": 0
+        }
+      }
+    },
+    "geometry_on_complete_subset": {
+      "pooled_descriptive": {
+        "n": 57,
+        "n_targets": 98,
+        "target_count_distribution": {
+          "1": 16,
+          "2": 41
+        },
+        "annotated_laterality_counts": {
+          "bilateral": 26,
+          "right": 17,
+          "left": 14
+        },
+        "n_numerical_decrease": 51,
+        "n_numerical_increase": 6,
+        "n_unchanged": 0,
+        "baseline_volume_ml": {
+          "median": 350.80189970661957,
+          "q1": 111.28548234704651,
+          "q3": 579.6962763604707,
+          "min": 1.0636374833296331,
+          "max": 2202.3779994326796
+        },
+        "followup_volume_ml": {
+          "median": 69.24409781224071,
+          "q1": 20.09331069084422,
+          "q3": 137.5708162821004,
+          "min": 0.3514953488567928,
+          "max": 1771.3512948947375
+        },
+        "absolute_change_ml": {
+          "median": -208.78967652549355,
+          "q1": -468.3574635458345,
+          "q3": -31.840345657587775,
+          "min": -1244.8330920516662,
+          "max": 497.11810607487587
+        },
+        "percent_change": {
+          "median": -77.44928658930846,
+          "q1": -87.88757972665465,
+          "q3": -52.708513099417615,
+          "min": -96.16460219197681,
+          "max": 74.45959446444877
+        },
+        "interval_days": {
+          "median": 44.0,
+          "q1": 40.0,
+          "q3": 49.0,
+          "min": 34.0,
+          "max": 388.0
+        },
+        "median_percent_change_ci95": {
+          "lower": -81.98262566700937,
+          "upper": -68.73848586851204,
+          "coverage": 0.9668560322124946,
+          "rank": 21,
+          "method": "central order-statistic exact binomial"
+        },
+        "n_interval_over_90_days": 1
+      },
+      "by_collection": {
+        "AREN0532": {
+          "n": 3,
+          "n_targets": 3,
+          "target_count_distribution": {
+            "1": 3
+          },
+          "annotated_laterality_counts": {
+            "right": 3
+          },
+          "n_numerical_decrease": 3,
+          "n_numerical_increase": 0,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 572.2691349317402,
+            "q1": 538.0141369432503,
+            "q3": 622.5628137792415,
+            "min": 503.7591389547604,
+            "max": 672.8564926267429
+          },
+          "followup_volume_ml": {
+            "median": 38.57663452732328,
+            "q1": 28.948900750255355,
+            "q3": 86.10260025347715,
+            "min": 19.321166973187434,
+            "max": 133.62856597963102
+          },
+          "absolute_change_ml": {
+            "median": -533.6925004044169,
+            "q1": -536.4602135257644,
+            "q3": -509.0652361929949,
+            "min": -539.2279266471119,
+            "max": -484.43797198157296
+          },
+          "percent_change": {
+            "median": -93.25900486806358,
+            "q1": -94.7118035300202,
+            "q3": -86.69955693718723,
+            "min": -96.16460219197681,
+            "max": -80.14010900631088
+          },
+          "interval_days": {
+            "median": 66.0,
+            "q1": 50.5,
+            "q3": 227.0,
+            "min": 35.0,
+            "max": 388.0
+          },
+          "median_percent_change_ci95": {
+            "lower": null,
+            "upper": null,
+            "coverage": null,
+            "rank": null,
+            "method": "central order-statistic; finite interval unavailable"
+          },
+          "n_interval_over_90_days": 1
+        },
+        "AREN0533": {
+          "n": 8,
+          "n_targets": 8,
+          "target_count_distribution": {
+            "1": 8
+          },
+          "annotated_laterality_counts": {
+            "right": 5,
+            "left": 3
+          },
+          "n_numerical_decrease": 8,
+          "n_numerical_increase": 0,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 640.9829190605901,
+            "q1": 553.8566488998176,
+            "q3": 840.5792537703917,
+            "min": 369.65569114616034,
+            "max": 934.3086834630476
+          },
+          "followup_volume_ml": {
+            "median": 132.05067602559012,
+            "q1": 108.86307761169866,
+            "q3": 218.81416784693903,
+            "min": 32.684135551950924,
+            "max": 420.2228359257692
+          },
+          "absolute_change_ml": {
+            "median": -514.9741432188684,
+            "q1": -554.1938621042973,
+            "q3": -453.4982787374934,
+            "min": -665.0250552645681,
+            "max": -232.08487486405994
+          },
+          "percent_change": {
+            "median": -78.8306236054604,
+            "q1": -83.40385662628535,
+            "q3": -61.47605596858124,
+            "min": -94.36185173429905,
+            "max": -52.708513099417615
+          },
+          "interval_days": {
+            "median": 44.0,
+            "q1": 39.5,
+            "q3": 47.75,
+            "min": 37.0,
+            "max": 52.0
+          },
+          "median_percent_change_ci95": {
+            "lower": -94.36185173429905,
+            "upper": -52.708513099417615,
+            "coverage": 0.9921875,
+            "rank": 1,
+            "method": "central order-statistic exact binomial"
+          },
+          "n_interval_over_90_days": 0
+        },
+        "AREN0534": {
+          "n": 46,
+          "n_targets": 87,
+          "target_count_distribution": {
+            "1": 5,
+            "2": 41
+          },
+          "annotated_laterality_counts": {
+            "bilateral": 26,
+            "left": 11,
+            "right": 9
+          },
+          "n_numerical_decrease": 40,
+          "n_numerical_increase": 6,
+          "n_unchanged": 0,
+          "baseline_volume_ml": {
+            "median": 263.9795463214639,
+            "q1": 95.27605982428109,
+            "q3": 533.372176090066,
+            "min": 1.0636374833296331,
+            "max": 2202.3779994326796
+          },
+          "followup_volume_ml": {
+            "median": 52.19609045815198,
+            "q1": 13.96837759053468,
+            "q3": 118.22864530935982,
+            "min": 0.3514953488567928,
+            "max": 1771.3512948947375
+          },
+          "absolute_change_ml": {
+            "median": -140.1219332600423,
+            "q1": -271.8235357272584,
+            "q3": -6.386922741608555,
+            "min": -1244.8330920516662,
+            "max": 497.11810607487587
+          },
+          "percent_change": {
+            "median": -76.67445505716731,
+            "q1": -87.745209505918,
+            "q3": -36.4601362240445,
+            "min": -95.45176902733621,
+            "max": 74.45959446444877
+          },
+          "interval_days": {
+            "median": 44.0,
+            "q1": 41.0,
+            "q3": 49.0,
+            "min": 34.0,
+            "max": 60.0
+          },
+          "median_percent_change_ci95": {
+            "lower": -82.54921840978487,
+            "upper": -65.97980667618612,
+            "coverage": 0.9741039182067652,
+            "rank": 16,
+            "method": "central order-statistic exact binomial"
+          },
+          "n_interval_over_90_days": 0
+        }
+      }
+    },
+    "paired_percentage_difference": {
+      "median": 0.05811475007608635,
+      "q1": -0.5996951866635101,
+      "q3": 0.725101550573612,
+      "min": -10.454835967943257,
+      "max": 4.120027719707807
+    },
+    "absolute_paired_percentage_difference": {
+      "median": 0.6337029187859855,
+      "q1": 0.1659588952934712,
+      "q3": 1.7756762312546357,
+      "min": 0.00926395629502963,
+      "max": 10.454835967943257
+    },
+    "numerical_sign_discordance_n": 0,
+    "selected_roi_n": 698,
+    "geometry_usable_roi_n": 432,
+    "roi_agreement": {
+      "eligible_selected_roi_n": 698,
+      "computed_roi_n": 432,
+      "unavailable_roi_n": 266,
+      "qc_flag_counts": {
+        "invalid_polygon": 249,
+        "irregular_plane_spacing": 11,
+        "single_slice": 3,
+        "overlapping_or_nested_closed_planar": 3
+      },
+      "signed_relative_error_pct": {
+        "median": 0.44418060473871385,
+        "q1": -3.656958652513739,
+        "q3": 4.318906553849503,
+        "min": -78.10816991882605,
+        "max": 680.0922635903548
+      },
+      "absolute_relative_error_pct": {
+        "median": 3.996934334341031,
+        "q1": 1.4239306229445474,
+        "q3": 12.489780097302983,
+        "min": 0.026424041723834363,
+        "max": 680.0922635903548
+      },
+      "n_absolute_relative_error_over_10pct": 126
+    },
+    "geometry_comparison_code_sha256": "75d7298a0a4cc312dd2197378759ac1332c9dfead381e5e4d59c3ffd1fe37208"
+  }
 }

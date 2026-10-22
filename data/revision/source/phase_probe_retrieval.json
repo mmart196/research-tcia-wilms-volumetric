@@ -1,0 +1,28 @@
+[
+  {
+    "patient_id": "AREN0534-PATELY",
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202253051159489.4",
+    "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202253051159489.4",
+    "http_status": 200,
+    "status": "downloaded",
+    "zip_sha256": "6c29f9435b2d810fb65e2f6d86b3edc9113ace7720ff74e9628021afeafe7567",
+    "bytes": 11666,
+    "dcm_sha256": "6bb50f80a5ede82e0c975e1fab168f1e62366b1095b0f4deab90e99766de1162",
+    "file": "/workspace/scratch/d813069df87a/revision_work/raw/1.2.826.0.1.534147.756.812677238.202253051159489.4.dcm",
+    "attempts": 1,
+    "elapsed_seconds": 6.392
+  },
+  {
+    "patient_id": "AREN0533-PAUVDS",
+    "series_uid": "1.2.826.0.1.534147.756.812677238.202241855456546.4",
+    "url": "https://services.cancerimagingarchive.net/nbia-api/services/v1/getImage?SeriesInstanceUID=1.2.826.0.1.534147.756.812677238.202241855456546.4",
+    "http_status": 200,
+    "status": "downloaded",
+    "zip_sha256": "c97f2e5741e6fa0ce01a23f405505208b07f795b685711bfff53d0ae69e6cc66",
+    "bytes": 4626,
+    "dcm_sha256": "17cc836db17670b499cc9d625f1ce6f8c5feb29592fa7424949cad919724e3f0",
+    "file": "/workspace/scratch/d813069df87a/revision_work/raw/1.2.826.0.1.534147.756.812677238.202241855456546.4.dcm",
+    "attempts": 1,
+    "elapsed_seconds": 6.607
+  }
+]
